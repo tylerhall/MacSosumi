@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css" media="screen">
+		html { height:100%; }
+	    body { height:100%; margin:0; padding:0; }
+        #map_canvas { width:100%; height:100%; }
+        div.info { font-family:Helvetica; font-size:14px; padding:0.5em; }
+        div.info img { float:left; margin:0 1em 1em 0; border:1px solid #666; }
+    </style>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+</head>
+<body>
+	<div id="map_canvas"></div>
+    <script type="text/javascript">
+		var map;
+		var markers = [];
+		
+		function createMarker(id, name, lat, lng, icon) {
+			var pos = new google.maps.LatLng(lat, lng);
+
+			if(markers[id]) {
+				markers[id].setPosition(pos);
+			} else {
+				markers[id] = new google.maps.Marker({position:pos, map:map, title:name, icon:icon});
+				var infowindow = new google.maps.InfoWindow({
+					content: name
+				});
+				google.maps.event.addListener(markers[id], 'click', function() {
+				  infowindow.open(map, markers[id]);
+				});
+
+				fitMap();
+			}			
+		}
+		
+		function fitMap() {
+			var bounds = new google.maps.LatLngBounds();
+			for(k in markers) {
+				bounds.extend(markers[k].getPosition());
+			}
+			map.fitBounds(bounds);
+			if(map.getZoom() > 12) {
+				map.setZoom(12);
+			}
+		}
+		
+		function viewOnMap(id) {
+			for(k in markers) {
+				if(k == id) {
+					map.panTo(markers[k].getPosition());
+				}
+			}
+		}
+
+		function go() {
+			var latlng = new google.maps.LatLng(0, -90);
+		    var myOptions = { zoom:2, center:latlng, mapTypeId:google.maps.MapTypeId.ROADMAP };
+		    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		}
+		
+		go();
+    </script>
+</body>
+</html>

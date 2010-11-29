@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* SosumiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* SosumiAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C63D7E1112A461B60003333A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C63D7E1012A461B60003333A /* Credits.rtf */; };
+		C65884AB12A4320E0054B0B4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */; };
+		C65884B212A433290054B0B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65884B112A433290054B0B4 /* Security.framework */; };
+		C658856C12A448BD0054B0B4 /* remove.icns in Resources */ = {isa = PBXBuildFile; fileRef = C658856A12A448BD0054B0B4 /* remove.icns */; };
+		C658856D12A448BD0054B0B4 /* add.icns in Resources */ = {isa = PBXBuildFile; fileRef = C658856B12A448BD0054B0B4 /* add.icns */; };
+		C65885B412A450430054B0B4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65885B312A450430054B0B4 /* Sparkle.framework */; };
+		C65885B912A4505B0054B0B4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65885B312A450430054B0B4 /* Sparkle.framework */; };
+		C65885E012A453C50054B0B4 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = C65885DF12A453C50054B0B4 /* dsa_pub.pem */; };
+		C6AE736312A374AD00A7E976 /* lock.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6AE736012A374AD00A7E976 /* lock.icns */; };
+		C6AE736412A374AD00A7E976 /* refresh.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6AE736112A374AD00A7E976 /* refresh.icns */; };
+		C6AE736512A374AD00A7E976 /* message.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6AE736212A374AD00A7E976 /* message.icns */; };
+		C6AE745C12A38CC400A7E976 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AE745A12A38CC400A7E976 /* green.png */; };
+		C6AE745D12A38CC400A7E976 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AE745B12A38CC400A7E976 /* red.png */; };
+		C6AE746E12A38CF400A7E976 /* THImageRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AE746D12A38CF400A7E976 /* THImageRow.m */; };
+		C6AE749B12A3904C00A7E976 /* disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AE749A12A3904C00A7E976 /* disabled.png */; };
+		C6AE74C112A3937300A7E976 /* THGradientBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AE74C012A3937300A7E976 /* THGradientBar.m */; };
+		C6AE74DF12A396D900A7E976 /* locate.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6AE74DE12A396D900A7E976 /* locate.icns */; };
+		C6AE750712A39A9900A7E976 /* NetworkSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AE750612A39A9900A7E976 /* NetworkSpinner.m */; };
+		C6C5C3F412A2408E0065A97B /* SSMAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C3F112A2408E0065A97B /* SSMAccount.m */; };
+		C6C5C3F512A2408E0065A97B /* SSMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C3F312A2408E0065A97B /* SSMDevice.m */; };
+		C6C5C3F912A2424C0065A97B /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6C5C3F812A2424C0065A97B /* Icon.icns */; };
+		C6C5C40C12A242F50065A97B /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40512A242F50065A97B /* GTMHTTPFetcher.m */; };
+		C6C5C40D12A242F50065A97B /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40712A242F50065A97B /* GTMHTTPFetcherLogging.m */; };
+		C6C5C40E12A242F50065A97B /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40912A242F50065A97B /* GTMHTTPFetcherService.m */; };
+		C6C5C40F12A242F50065A97B /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40B12A242F50065A97B /* GTMHTTPFetchHistory.m */; };
+		C6C5C43812A24DFE0065A97B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C43712A24DFE0065A97B /* NSData+Base64.m */; };
+		C6E9503112A2B1D100E67841 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502812A2B1D100E67841 /* NSObject+SBJSON.m */; };
+		C6E9503212A2B1D100E67841 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502A12A2B1D100E67841 /* NSString+SBJSON.m */; };
+		C6E9503312A2B1D100E67841 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502C12A2B1D100E67841 /* SBJsonBase.m */; };
+		C6E9503412A2B1D100E67841 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502E12A2B1D100E67841 /* SBJsonParser.m */; };
+		C6E9503512A2B1D100E67841 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9503012A2B1D100E67841 /* SBJsonWriter.m */; };
+		C6EAB75B12A2DE3E004B6492 /* SosumiAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6EAB75A12A2DE3E004B6492 /* SosumiAPI.plist */; };
+		C6EAB89512A300BA004B6492 /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = C6EAB89412A300BA004B6492 /* map.html */; };
+		C6EAB89912A30125004B6492 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EAB89812A30125004B6492 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C65885BB12A450600054B0B4 /* Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C65885B912A4505B0054B0B4 /* Sparkle.framework in Frameworks */,
+			);
+			name = Frameworks;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* SosumiAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SosumiAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* SosumiAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SosumiAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Sosumi_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sosumi_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Sosumi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sosumi-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Sosumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sosumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63D7E1012A461B60003333A /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		C65884A912A4320E0054B0B4 /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainItem.h; sourceTree = "<group>"; };
+		C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
+		C65884B112A433290054B0B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C658856A12A448BD0054B0B4 /* remove.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = remove.icns; sourceTree = "<group>"; };
+		C658856B12A448BD0054B0B4 /* add.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = add.icns; sourceTree = "<group>"; };
+		C65885B312A450430054B0B4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		C65885DF12A453C50054B0B4 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		C6AE736012A374AD00A7E976 /* lock.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = lock.icns; sourceTree = "<group>"; };
+		C6AE736112A374AD00A7E976 /* refresh.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = refresh.icns; sourceTree = "<group>"; };
+		C6AE736212A374AD00A7E976 /* message.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = message.icns; sourceTree = "<group>"; };
+		C6AE745A12A38CC400A7E976 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		C6AE745B12A38CC400A7E976 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		C6AE746C12A38CF400A7E976 /* THImageRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THImageRow.h; sourceTree = "<group>"; };
+		C6AE746D12A38CF400A7E976 /* THImageRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THImageRow.m; sourceTree = "<group>"; };
+		C6AE749A12A3904C00A7E976 /* disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disabled.png; sourceTree = "<group>"; };
+		C6AE74BF12A3937300A7E976 /* THGradientBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THGradientBar.h; sourceTree = "<group>"; };
+		C6AE74C012A3937300A7E976 /* THGradientBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THGradientBar.m; sourceTree = "<group>"; };
+		C6AE74DE12A396D900A7E976 /* locate.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = locate.icns; sourceTree = "<group>"; };
+		C6AE750512A39A9900A7E976 /* NetworkSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkSpinner.h; sourceTree = "<group>"; };
+		C6AE750612A39A9900A7E976 /* NetworkSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkSpinner.m; sourceTree = "<group>"; };
+		C6C5C3F012A2408E0065A97B /* SSMAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMAccount.h; sourceTree = "<group>"; };
+		C6C5C3F112A2408E0065A97B /* SSMAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMAccount.m; sourceTree = "<group>"; };
+		C6C5C3F212A2408E0065A97B /* SSMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMDevice.h; sourceTree = "<group>"; };
+		C6C5C3F312A2408E0065A97B /* SSMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMDevice.m; sourceTree = "<group>"; };
+		C6C5C3F812A2424C0065A97B /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		C6C5C40412A242F50065A97B /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		C6C5C40512A242F50065A97B /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		C6C5C40612A242F50065A97B /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherLogging.h; sourceTree = "<group>"; };
+		C6C5C40712A242F50065A97B /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherLogging.m; sourceTree = "<group>"; };
+		C6C5C40812A242F50065A97B /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherService.h; sourceTree = "<group>"; };
+		C6C5C40912A242F50065A97B /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherService.m; sourceTree = "<group>"; };
+		C6C5C40A12A242F50065A97B /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		C6C5C40B12A242F50065A97B /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		C6C5C43612A24DFE0065A97B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		C6C5C43712A24DFE0065A97B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		C6E9502612A2B1D100E67841 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		C6E9502712A2B1D100E67841 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		C6E9502812A2B1D100E67841 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		C6E9502912A2B1D100E67841 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		C6E9502A12A2B1D100E67841 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		C6E9502B12A2B1D100E67841 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		C6E9502C12A2B1D100E67841 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		C6E9502D12A2B1D100E67841 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		C6E9502E12A2B1D100E67841 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		C6E9502F12A2B1D100E67841 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		C6E9503012A2B1D100E67841 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		C6EAB75A12A2DE3E004B6492 /* SosumiAPI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SosumiAPI.plist; sourceTree = "<group>"; };
+		C6EAB89412A300BA004B6492 /* map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = map.html; sourceTree = "<group>"; };
+		C6EAB89812A30125004B6492 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				C6EAB89912A30125004B6492 /* WebKit.framework in Frameworks */,
+				C65884B212A433290054B0B4 /* Security.framework in Frameworks */,
+				C65885B412A450430054B0B4 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C6EAB83A12A2FA87004B6492 /* UI */,
+				C6AE750512A39A9900A7E976 /* NetworkSpinner.h */,
+				C6AE750612A39A9900A7E976 /* NetworkSpinner.m */,
+				C6C5C3F012A2408E0065A97B /* SSMAccount.h */,
+				C6C5C3F112A2408E0065A97B /* SSMAccount.m */,
+				C6C5C3F212A2408E0065A97B /* SSMDevice.h */,
+				C6C5C3F312A2408E0065A97B /* SSMDevice.m */,
+				256AC3D80F4B6AC300CF3369 /* SosumiAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* SosumiAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C65885B312A450430054B0B4 /* Sparkle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				C6EAB89812A30125004B6492 /* WebKit.framework */,
+				C65884B112A433290054B0B4 /* Security.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Sosumi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Sosumi */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Sosumi;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C65884A812A4320E0054B0B4 /* EMKeychain */,
+				C6E9502512A2B1D100E67841 /* JSON */,
+				C6C5C40312A242F50065A97B /* GTMHTTPFetcher */,
+				C6C5C43612A24DFE0065A97B /* NSData+Base64.h */,
+				C6C5C43712A24DFE0065A97B /* NSData+Base64.m */,
+				256AC3F00F4B6AF500CF3369 /* Sosumi_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C63D7E1012A461B60003333A /* Credits.rtf */,
+				C65885DF12A453C50054B0B4 /* dsa_pub.pem */,
+				C6AE749A12A3904C00A7E976 /* disabled.png */,
+				C6AE745A12A38CC400A7E976 /* green.png */,
+				C6AE745B12A38CC400A7E976 /* red.png */,
+				C658856A12A448BD0054B0B4 /* remove.icns */,
+				C658856B12A448BD0054B0B4 /* add.icns */,
+				C6AE74DE12A396D900A7E976 /* locate.icns */,
+				C6AE736012A374AD00A7E976 /* lock.icns */,
+				C6AE736112A374AD00A7E976 /* refresh.icns */,
+				C6AE736212A374AD00A7E976 /* message.icns */,
+				C6EAB89412A300BA004B6492 /* map.html */,
+				C6C5C3F812A2424C0065A97B /* Icon.icns */,
+				8D1107310486CEB800E47090 /* Sosumi-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				C6EAB75A12A2DE3E004B6492 /* SosumiAPI.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C65884A812A4320E0054B0B4 /* EMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				C65884A912A4320E0054B0B4 /* EMKeychainItem.h */,
+				C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */,
+			);
+			path = EMKeychain;
+			sourceTree = "<group>";
+		};
+		C6C5C40312A242F50065A97B /* GTMHTTPFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				C6C5C40412A242F50065A97B /* GTMHTTPFetcher.h */,
+				C6C5C40512A242F50065A97B /* GTMHTTPFetcher.m */,
+				C6C5C40612A242F50065A97B /* GTMHTTPFetcherLogging.h */,
+				C6C5C40712A242F50065A97B /* GTMHTTPFetcherLogging.m */,
+				C6C5C40812A242F50065A97B /* GTMHTTPFetcherService.h */,
+				C6C5C40912A242F50065A97B /* GTMHTTPFetcherService.m */,
+				C6C5C40A12A242F50065A97B /* GTMHTTPFetchHistory.h */,
+				C6C5C40B12A242F50065A97B /* GTMHTTPFetchHistory.m */,
+			);
+			path = GTMHTTPFetcher;
+			sourceTree = "<group>";
+		};
+		C6E9502512A2B1D100E67841 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C6E9502612A2B1D100E67841 /* JSON.h */,
+				C6E9502712A2B1D100E67841 /* NSObject+SBJSON.h */,
+				C6E9502812A2B1D100E67841 /* NSObject+SBJSON.m */,
+				C6E9502912A2B1D100E67841 /* NSString+SBJSON.h */,
+				C6E9502A12A2B1D100E67841 /* NSString+SBJSON.m */,
+				C6E9502B12A2B1D100E67841 /* SBJsonBase.h */,
+				C6E9502C12A2B1D100E67841 /* SBJsonBase.m */,
+				C6E9502D12A2B1D100E67841 /* SBJsonParser.h */,
+				C6E9502E12A2B1D100E67841 /* SBJsonParser.m */,
+				C6E9502F12A2B1D100E67841 /* SBJsonWriter.h */,
+				C6E9503012A2B1D100E67841 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		C6EAB83A12A2FA87004B6492 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C6AE74BF12A3937300A7E976 /* THGradientBar.h */,
+				C6AE74C012A3937300A7E976 /* THGradientBar.m */,
+				C6AE746C12A38CF400A7E976 /* THImageRow.h */,
+				C6AE746D12A38CF400A7E976 /* THImageRow.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Sosumi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Sosumi" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				C65885BB12A450600054B0B4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sosumi;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Sosumi;
+			productReference = 8D1107320486CEB800E47090 /* Sosumi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Sosumi" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Sosumi */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Sosumi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				C6C5C3F912A2424C0065A97B /* Icon.icns in Resources */,
+				C6EAB75B12A2DE3E004B6492 /* SosumiAPI.plist in Resources */,
+				C6EAB89512A300BA004B6492 /* map.html in Resources */,
+				C6AE736312A374AD00A7E976 /* lock.icns in Resources */,
+				C6AE736412A374AD00A7E976 /* refresh.icns in Resources */,
+				C6AE736512A374AD00A7E976 /* message.icns in Resources */,
+				C6AE745C12A38CC400A7E976 /* green.png in Resources */,
+				C6AE745D12A38CC400A7E976 /* red.png in Resources */,
+				C6AE749B12A3904C00A7E976 /* disabled.png in Resources */,
+				C6AE74DF12A396D900A7E976 /* locate.icns in Resources */,
+				C658856C12A448BD0054B0B4 /* remove.icns in Resources */,
+				C658856D12A448BD0054B0B4 /* add.icns in Resources */,
+				C65885E012A453C50054B0B4 /* dsa_pub.pem in Resources */,
+				C63D7E1112A461B60003333A /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* SosumiAppDelegate.m in Sources */,
+				C6C5C3F412A2408E0065A97B /* SSMAccount.m in Sources */,
+				C6C5C3F512A2408E0065A97B /* SSMDevice.m in Sources */,
+				C6C5C40C12A242F50065A97B /* GTMHTTPFetcher.m in Sources */,
+				C6C5C40D12A242F50065A97B /* GTMHTTPFetcherLogging.m in Sources */,
+				C6C5C40E12A242F50065A97B /* GTMHTTPFetcherService.m in Sources */,
+				C6C5C40F12A242F50065A97B /* GTMHTTPFetchHistory.m in Sources */,
+				C6C5C43812A24DFE0065A97B /* NSData+Base64.m in Sources */,
+				C6E9503112A2B1D100E67841 /* NSObject+SBJSON.m in Sources */,
+				C6E9503212A2B1D100E67841 /* NSString+SBJSON.m in Sources */,
+				C6E9503312A2B1D100E67841 /* SBJsonBase.m in Sources */,
+				C6E9503412A2B1D100E67841 /* SBJsonParser.m in Sources */,
+				C6E9503512A2B1D100E67841 /* SBJsonWriter.m in Sources */,
+				C6AE746E12A38CF400A7E976 /* THImageRow.m in Sources */,
+				C6AE74C112A3937300A7E976 /* THGradientBar.m in Sources */,
+				C6AE750712A39A9900A7E976 /* NetworkSpinner.m in Sources */,
+				C65884AB12A4320E0054B0B4 /* EMKeychainItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sosumi_Prefix.pch;
+				INFOPLIST_FILE = "Sosumi-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Sosumi;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sosumi_Prefix.pch;
+				INFOPLIST_FILE = "Sosumi-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Sosumi;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Tyler Hall";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Sosumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Sosumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
