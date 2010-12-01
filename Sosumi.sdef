@@ -1,0 +1,14 @@
+<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+ 
+    <xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+ 
+	<suite name="Sosumi Suite" code="SScr">
+		<class name="application" code="capp" description="Our simple application class." inherits="application">
+
+            <cocoa class="NSApplication"/>
+            <property name="ready" code="Srdy" type="boolean" access="r" description="we're always ready"/>
+
+        </class>
+    </suite>
+ 
+</dictionary>

@@ -13,6 +13,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		C63D7E1112A461B60003333A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C63D7E1012A461B60003333A /* Credits.rtf */; };
+		C64C923812A4EB4300B26006 /* Sosumi.sdef in Resources */ = {isa = PBXBuildFile; fileRef = C64C923712A4EB4300B26006 /* Sosumi.sdef */; };
 		C65884AB12A4320E0054B0B4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */; };
 		C65884B212A433290054B0B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65884B112A433290054B0B4 /* Security.framework */; };
 		C658856C12A448BD0054B0B4 /* remove.icns in Resources */ = {isa = PBXBuildFile; fileRef = C658856A12A448BD0054B0B4 /* remove.icns */; };
@@ -76,6 +77,7 @@
 		8D1107310486CEB800E47090 /* Sosumi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sosumi-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Sosumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sosumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63D7E1012A461B60003333A /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		C64C923712A4EB4300B26006 /* Sosumi.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = Sosumi.sdef; sourceTree = "<group>"; };
 		C65884A912A4320E0054B0B4 /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainItem.h; sourceTree = "<group>"; };
 		C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
 		C65884B112A433290054B0B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -233,6 +235,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				C6EAB75A12A2DE3E004B6492 /* SosumiAPI.plist */,
+				C64C923712A4EB4300B26006 /* Sosumi.sdef */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				C658856D12A448BD0054B0B4 /* add.icns in Resources */,
 				C65885E012A453C50054B0B4 /* dsa_pub.pem in Resources */,
 				C63D7E1112A461B60003333A /* Credits.rtf in Resources */,
+				C64C923812A4EB4300B26006 /* Sosumi.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
