@@ -85,7 +85,22 @@
 			NSArray *rawDevices = [json objectForKey:@"content"];
 			if(rawDevices) {
 				for(NSDictionary *rawDevice in rawDevices) {
-					SSMDevice *device = [[SSMDevice alloc] init];
+					
+					SSMDevice *device;
+					BOOL found = NO;
+					NSMutableArray *childNodes = [self.treeNode mutableChildNodes];
+					for(int i = 0; i < [childNodes count]; i++) {
+						if([[(SSMDevice *)[[childNodes objectAtIndex:i] representedObject] deviceId] isEqualToString:[rawDevice objectForKey:@"id"]]) {
+							found = YES;
+							device = [childNodes objectAtIndex:i];
+							break;
+						}
+					}
+
+					if(!found) {
+						device = [[SSMDevice alloc] init];
+					}
+
 					device.parent = self;
 					device.isLocating = [[rawDevice objectForKey:@"isLocating"] boolValue];
 					device.deviceClass = [rawDevice objectForKey:@"deviceClass"];
@@ -106,21 +121,9 @@
 						device.latitude = [location objectForKey:@"latitude"];
 					}
 					[self.devices setValue:device forKey:device.deviceId];
-
-					// This is inheritly stupid, but what the hell. It works...
-					BOOL found = NO;
-					NSTreeNode *deviceTreeNode = [NSTreeNode treeNodeWithRepresentedObject:device];
-					NSMutableArray *childNodes = [self.treeNode mutableChildNodes];
-					for(int i = 0; i < [childNodes count]; i++) {
-						if([[(SSMDevice *)[[childNodes objectAtIndex:i] representedObject] deviceId] isEqualToString:device.deviceId]) {
-							found = YES;
-							// NSLog(@"replacing %@", device.name);
-							[childNodes replaceObjectAtIndex:i withObject:deviceTreeNode];
-							break;
-						}
-					}
 					
 					if(!found) {
+						NSTreeNode *deviceTreeNode = [NSTreeNode treeNodeWithRepresentedObject:device];
 						[[self.treeNode mutableChildNodes] addObject:deviceTreeNode];
 					}
 				}
