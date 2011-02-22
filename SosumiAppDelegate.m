@@ -15,6 +15,7 @@
 @implementation SosumiAppDelegate
 
 @synthesize window;
+@synthesize panelSyncActivity;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshOutline:) name:@"DEVICES_DID_UPDATE" object:nil];
@@ -265,6 +266,15 @@
     NSArray *types = [NSArray arrayWithObjects:NSStringPboardType, nil];
     [pb declareTypes:types owner:self];
     [pb setString:[device coords] forType:NSStringPboardType];
+}
+
+- (IBAction)showSyncActivityPanel:(id)sender
+{
+	if([self.panelSyncActivity isVisible]) {
+		[self.panelSyncActivity close];
+	} else {
+		[self.panelSyncActivity orderFront:nil];
+	}
 }
 
 #pragma mark -

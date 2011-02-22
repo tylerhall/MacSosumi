@@ -39,6 +39,8 @@
 		C6C5C40E12A242F50065A97B /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40912A242F50065A97B /* GTMHTTPFetcherService.m */; };
 		C6C5C40F12A242F50065A97B /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40B12A242F50065A97B /* GTMHTTPFetchHistory.m */; };
 		C6C5C43812A24DFE0065A97B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C43712A24DFE0065A97B /* NSData+Base64.m */; };
+		C6C849EE13145254001A45A8 /* THNetworkActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C849ED13145254001A45A8 /* THNetworkActivityManager.m */; };
+		C6C849F113145297001A45A8 /* THNetworkActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C849F013145297001A45A8 /* THNetworkActivityCell.m */; };
 		C6E9503112A2B1D100E67841 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502812A2B1D100E67841 /* NSObject+SBJSON.m */; };
 		C6E9503212A2B1D100E67841 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502A12A2B1D100E67841 /* NSString+SBJSON.m */; };
 		C6E9503312A2B1D100E67841 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502C12A2B1D100E67841 /* SBJsonBase.m */; };
@@ -113,6 +115,10 @@
 		C6C5C40B12A242F50065A97B /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
 		C6C5C43612A24DFE0065A97B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		C6C5C43712A24DFE0065A97B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		C6C849EC13145254001A45A8 /* THNetworkActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNetworkActivityManager.h; sourceTree = "<group>"; };
+		C6C849ED13145254001A45A8 /* THNetworkActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNetworkActivityManager.m; sourceTree = "<group>"; };
+		C6C849EF13145297001A45A8 /* THNetworkActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNetworkActivityCell.h; sourceTree = "<group>"; };
+		C6C849F013145297001A45A8 /* THNetworkActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNetworkActivityCell.m; sourceTree = "<group>"; };
 		C6E9502612A2B1D100E67841 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		C6E9502712A2B1D100E67841 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		C6E9502812A2B1D100E67841 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 				C6C5C3F312A2408E0065A97B /* SSMDevice.m */,
 				256AC3D80F4B6AC300CF3369 /* SosumiAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* SosumiAppDelegate.m */,
+				C6C849EC13145254001A45A8 /* THNetworkActivityManager.h */,
+				C6C849ED13145254001A45A8 /* THNetworkActivityManager.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -298,6 +306,8 @@
 				C6AE74C012A3937300A7E976 /* THGradientBar.m */,
 				C6AE746C12A38CF400A7E976 /* THImageRow.h */,
 				C6AE746D12A38CF400A7E976 /* THImageRow.m */,
+				C6C849EF13145297001A45A8 /* THNetworkActivityCell.h */,
+				C6C849F013145297001A45A8 /* THNetworkActivityCell.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -398,6 +408,8 @@
 				C6AE74C112A3937300A7E976 /* THGradientBar.m in Sources */,
 				C6AE750712A39A9900A7E976 /* NetworkSpinner.m in Sources */,
 				C65884AB12A4320E0054B0B4 /* EMKeychainItem.m in Sources */,
+				C6C849EE13145254001A45A8 /* THNetworkActivityManager.m in Sources */,
+				C6C849F113145297001A45A8 /* THNetworkActivityCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

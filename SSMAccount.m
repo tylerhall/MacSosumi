@@ -13,6 +13,8 @@
 #import "JSON.h"
 #import "NetworkSpinner.h"
 
+#define SINFO(title, subtitle)	[NSDictionary dictionaryWithObjectsAndKeys:title, @"title", subtitle, @"subtitle", nil]
+
 @implementation SSMAccount 
 
 @synthesize username;
@@ -67,7 +69,7 @@
 	}
 
 	GTMHTTPFetcher *fetcher = [self getPreparedFetcherWithMethod:@"initClient"];
-	
+
 	NSString *postStr = [self apiStringsForMethod:@"initClient"];
 	[fetcher setPostData:[postStr dataUsingEncoding:NSUTF8StringEncoding]];
 
@@ -217,7 +219,8 @@
 	[request addValue:[NSString stringWithFormat:@"Basic %@", [userPwd base64EncodedString]] forHTTPHeaderField:@"Authorization"];
 
 	GTMHTTPFetcher *fetcher = [GTMHTTPFetcher fetcherWithRequest:request];
-
+	[fetcher setUserData:SINFO(method, [[[fetcher mutableRequest] URL] absoluteString])];
+	
 	return fetcher;
 }
 

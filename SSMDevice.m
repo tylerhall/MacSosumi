@@ -9,6 +9,8 @@
 #import "SSMDevice.h"
 #import "SSMAccount.h"
 
+#define SINFO(title, subtitle)	[NSDictionary dictionaryWithObjectsAndKeys:title, @"title", subtitle, @"subtitle", nil]
+
 @implementation SSMDevice
 
 @synthesize isLocating;

@@ -17,6 +17,7 @@
 	IBOutlet WebView *map;
 	IBOutlet NSTreeController *treeController;
 	IBOutlet NSProgressIndicator *piSpinner;
+	IBOutlet NSPanel *panelSyncActivity;
 	
 	IBOutlet NSPanel *panelAddAccount;
 	IBOutlet NSTextField *txtUsername;
@@ -28,7 +29,8 @@
 	IBOutlet NSButton *chkAlarm;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) IBOutlet NSWindow *window;
+@property (nonatomic, retain) IBOutlet NSPanel *panelSyncActivity;
 
 - (void)refreshOutline:(NSNotification *)notification;
 - (void)refreshMap;
@@ -43,6 +45,7 @@
 - (IBAction)confirmAddAccount:(id)sender;
 - (IBAction)confirmSendMessage:(id)sender;
 - (IBAction)copyCoordsWasClicked:(id)sender;
+- (IBAction)showSyncActivityPanel:(id)sender;
 
 - (void)showSpinner:(NSNotification *)notification;
 - (void)hideSpinner:(NSNotification *)notification;
