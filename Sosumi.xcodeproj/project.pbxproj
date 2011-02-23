@@ -14,6 +14,58 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		C63D7E1112A461B60003333A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C63D7E1012A461B60003333A /* Credits.rtf */; };
 		C64C923812A4EB4300B26006 /* Sosumi.sdef in Resources */ = {isa = PBXBuildFile; fileRef = C64C923712A4EB4300B26006 /* Sosumi.sdef */; };
+		C65111E6131565FF00833F2F /* Device-Generic-Generic-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111B2131565FF00833F2F /* Device-Generic-Generic-mini.png */; };
+		C65111E7131565FF00833F2F /* Device-Generic-Generic-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111B3131565FF00833F2F /* Device-Generic-Generic-mini@2x.png */; };
+		C65111E8131565FF00833F2F /* Device-Generic-Generic.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111B4131565FF00833F2F /* Device-Generic-Generic.png */; };
+		C65111E9131565FF00833F2F /* Device-Generic-Generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111B5131565FF00833F2F /* Device-Generic-Generic@2x.png */; };
+		C65111EA131565FF00833F2F /* Device-iPad-FirstGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111B6131565FF00833F2F /* Device-iPad-FirstGen-mini.png */; };
+		C65111EB131565FF00833F2F /* Device-iPad-FirstGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111B7131565FF00833F2F /* Device-iPad-FirstGen-mini@2x.png */; };
+		C65111EC131565FF00833F2F /* Device-iPad-FirstGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111B8131565FF00833F2F /* Device-iPad-FirstGen.png */; };
+		C65111ED131565FF00833F2F /* Device-iPad-FirstGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111B9131565FF00833F2F /* Device-iPad-FirstGen@2x.png */; };
+		C65111EE131565FF00833F2F /* Device-iPad-Generic-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111BA131565FF00833F2F /* Device-iPad-Generic-mini.png */; };
+		C65111EF131565FF00833F2F /* Device-iPad-Generic-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111BB131565FF00833F2F /* Device-iPad-Generic-mini@2x.png */; };
+		C65111F0131565FF00833F2F /* Device-iPad-Generic.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111BC131565FF00833F2F /* Device-iPad-Generic.png */; };
+		C65111F1131565FF00833F2F /* Device-iPad-Generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111BD131565FF00833F2F /* Device-iPad-Generic@2x.png */; };
+		C65111F2131565FF00833F2F /* Device-iPhone-3G-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111BE131565FF00833F2F /* Device-iPhone-3G-mini.png */; };
+		C65111F3131565FF00833F2F /* Device-iPhone-3G-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111BF131565FF00833F2F /* Device-iPhone-3G-mini@2x.png */; };
+		C65111F4131565FF00833F2F /* Device-iPhone-3G.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C0131565FF00833F2F /* Device-iPhone-3G.png */; };
+		C65111F5131565FF00833F2F /* Device-iPhone-3G@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C1131565FF00833F2F /* Device-iPhone-3G@2x.png */; };
+		C65111F6131565FF00833F2F /* Device-iPhone-3GS-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C2131565FF00833F2F /* Device-iPhone-3GS-mini.png */; };
+		C65111F7131565FF00833F2F /* Device-iPhone-3GS-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C3131565FF00833F2F /* Device-iPhone-3GS-mini@2x.png */; };
+		C65111F8131565FF00833F2F /* Device-iPhone-3GS.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C4131565FF00833F2F /* Device-iPhone-3GS.png */; };
+		C65111F9131565FF00833F2F /* Device-iPhone-3GS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C5131565FF00833F2F /* Device-iPhone-3GS@2x.png */; };
+		C65111FA131565FF00833F2F /* Device-iPhone-FirstGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C6131565FF00833F2F /* Device-iPhone-FirstGen-mini.png */; };
+		C65111FB131565FF00833F2F /* Device-iPhone-FirstGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C7131565FF00833F2F /* Device-iPhone-FirstGen-mini@2x.png */; };
+		C65111FC131565FF00833F2F /* Device-iPhone-FirstGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C8131565FF00833F2F /* Device-iPhone-FirstGen.png */; };
+		C65111FD131565FF00833F2F /* Device-iPhone-FirstGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111C9131565FF00833F2F /* Device-iPhone-FirstGen@2x.png */; };
+		C65111FE131565FF00833F2F /* Device-iPhone-FourthGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111CA131565FF00833F2F /* Device-iPhone-FourthGen-mini.png */; };
+		C65111FF131565FF00833F2F /* Device-iPhone-FourthGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111CB131565FF00833F2F /* Device-iPhone-FourthGen-mini@2x.png */; };
+		C6511200131565FF00833F2F /* Device-iPhone-FourthGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111CC131565FF00833F2F /* Device-iPhone-FourthGen.png */; };
+		C6511201131565FF00833F2F /* Device-iPhone-FourthGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111CD131565FF00833F2F /* Device-iPhone-FourthGen@2x.png */; };
+		C6511202131565FF00833F2F /* Device-iPhone-Generic-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111CE131565FF00833F2F /* Device-iPhone-Generic-mini.png */; };
+		C6511203131565FF00833F2F /* Device-iPhone-Generic-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111CF131565FF00833F2F /* Device-iPhone-Generic-mini@2x.png */; };
+		C6511204131565FF00833F2F /* Device-iPhone-Generic.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D0131565FF00833F2F /* Device-iPhone-Generic.png */; };
+		C6511205131565FF00833F2F /* Device-iPhone-Generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D1131565FF00833F2F /* Device-iPhone-Generic@2x.png */; };
+		C6511206131565FF00833F2F /* Device-iPod-FirstGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D2131565FF00833F2F /* Device-iPod-FirstGen-mini.png */; };
+		C6511207131565FF00833F2F /* Device-iPod-FirstGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D3131565FF00833F2F /* Device-iPod-FirstGen-mini@2x.png */; };
+		C6511208131565FF00833F2F /* Device-iPod-FirstGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D4131565FF00833F2F /* Device-iPod-FirstGen.png */; };
+		C6511209131565FF00833F2F /* Device-iPod-FirstGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D5131565FF00833F2F /* Device-iPod-FirstGen@2x.png */; };
+		C651120A131565FF00833F2F /* Device-iPod-FourthGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D6131565FF00833F2F /* Device-iPod-FourthGen-mini.png */; };
+		C651120B131565FF00833F2F /* Device-iPod-FourthGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D7131565FF00833F2F /* Device-iPod-FourthGen-mini@2x.png */; };
+		C651120C131565FF00833F2F /* Device-iPod-FourthGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D8131565FF00833F2F /* Device-iPod-FourthGen.png */; };
+		C651120D131565FF00833F2F /* Device-iPod-FourthGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111D9131565FF00833F2F /* Device-iPod-FourthGen@2x.png */; };
+		C651120E131565FF00833F2F /* Device-iPod-Generic-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111DA131565FF00833F2F /* Device-iPod-Generic-mini.png */; };
+		C651120F131565FF00833F2F /* Device-iPod-Generic-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111DB131565FF00833F2F /* Device-iPod-Generic-mini@2x.png */; };
+		C6511210131565FF00833F2F /* Device-iPod-Generic.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111DC131565FF00833F2F /* Device-iPod-Generic.png */; };
+		C6511211131565FF00833F2F /* Device-iPod-Generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111DD131565FF00833F2F /* Device-iPod-Generic@2x.png */; };
+		C6511212131565FF00833F2F /* Device-iPod-SecondGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111DE131565FF00833F2F /* Device-iPod-SecondGen-mini.png */; };
+		C6511213131565FF00833F2F /* Device-iPod-SecondGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111DF131565FF00833F2F /* Device-iPod-SecondGen-mini@2x.png */; };
+		C6511214131565FF00833F2F /* Device-iPod-SecondGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E0131565FF00833F2F /* Device-iPod-SecondGen.png */; };
+		C6511215131565FF00833F2F /* Device-iPod-SecondGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E1131565FF00833F2F /* Device-iPod-SecondGen@2x.png */; };
+		C6511216131565FF00833F2F /* Device-iPod-ThirdGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E2131565FF00833F2F /* Device-iPod-ThirdGen-mini.png */; };
+		C6511217131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E3131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png */; };
+		C6511218131565FF00833F2F /* Device-iPod-ThirdGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E4131565FF00833F2F /* Device-iPod-ThirdGen.png */; };
+		C6511219131565FF00833F2F /* Device-iPod-ThirdGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E5131565FF00833F2F /* Device-iPod-ThirdGen@2x.png */; };
 		C65884AB12A4320E0054B0B4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */; };
 		C65884B212A433290054B0B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65884B112A433290054B0B4 /* Security.framework */; };
 		C658856C12A448BD0054B0B4 /* remove.icns in Resources */ = {isa = PBXBuildFile; fileRef = C658856A12A448BD0054B0B4 /* remove.icns */; };
@@ -41,26 +93,6 @@
 		C6C5C43812A24DFE0065A97B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C43712A24DFE0065A97B /* NSData+Base64.m */; };
 		C6C849EE13145254001A45A8 /* THNetworkActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C849ED13145254001A45A8 /* THNetworkActivityManager.m */; };
 		C6C849F113145297001A45A8 /* THNetworkActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C849F013145297001A45A8 /* THNetworkActivityCell.m */; };
-		C6C84A8513145E3F001A45A8 /* Device-iPad-FirstGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7113145E3F001A45A8 /* Device-iPad-FirstGen-mini.png */; };
-		C6C84A8613145E3F001A45A8 /* Device-iPad-FirstGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7213145E3F001A45A8 /* Device-iPad-FirstGen-mini@2x.png */; };
-		C6C84A8713145E3F001A45A8 /* Device-iPad-FirstGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7313145E3F001A45A8 /* Device-iPad-FirstGen.png */; };
-		C6C84A8813145E3F001A45A8 /* Device-iPad-FirstGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7413145E3F001A45A8 /* Device-iPad-FirstGen@2x.png */; };
-		C6C84A8913145E3F001A45A8 /* Device-iPhone-FirstGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7513145E3F001A45A8 /* Device-iPhone-FirstGen-mini.png */; };
-		C6C84A8A13145E3F001A45A8 /* Device-iPhone-FirstGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7613145E3F001A45A8 /* Device-iPhone-FirstGen-mini@2x.png */; };
-		C6C84A8B13145E3F001A45A8 /* Device-iPhone-FirstGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7713145E3F001A45A8 /* Device-iPhone-FirstGen.png */; };
-		C6C84A8C13145E3F001A45A8 /* Device-iPhone-FirstGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7813145E3F001A45A8 /* Device-iPhone-FirstGen@2x.png */; };
-		C6C84A8D13145E3F001A45A8 /* Device-iPhone-FourthGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7913145E3F001A45A8 /* Device-iPhone-FourthGen-mini.png */; };
-		C6C84A8E13145E3F001A45A8 /* Device-iPhone-FourthGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7A13145E3F001A45A8 /* Device-iPhone-FourthGen-mini@2x.png */; };
-		C6C84A8F13145E3F001A45A8 /* Device-iPhone-FourthGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7B13145E3F001A45A8 /* Device-iPhone-FourthGen.png */; };
-		C6C84A9013145E3F001A45A8 /* Device-iPhone-FourthGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7C13145E3F001A45A8 /* Device-iPhone-FourthGen@2x.png */; };
-		C6C84A9113145E3F001A45A8 /* Device-iPod-FirstGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7D13145E3F001A45A8 /* Device-iPod-FirstGen-mini.png */; };
-		C6C84A9213145E3F001A45A8 /* Device-iPod-FirstGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7E13145E3F001A45A8 /* Device-iPod-FirstGen-mini@2x.png */; };
-		C6C84A9313145E3F001A45A8 /* Device-iPod-FirstGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A7F13145E3F001A45A8 /* Device-iPod-FirstGen.png */; };
-		C6C84A9413145E3F001A45A8 /* Device-iPod-FirstGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A8013145E3F001A45A8 /* Device-iPod-FirstGen@2x.png */; };
-		C6C84A9513145E3F001A45A8 /* Device-iPod-FourthGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A8113145E3F001A45A8 /* Device-iPod-FourthGen-mini.png */; };
-		C6C84A9613145E3F001A45A8 /* Device-iPod-FourthGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A8213145E3F001A45A8 /* Device-iPod-FourthGen-mini@2x.png */; };
-		C6C84A9713145E3F001A45A8 /* Device-iPod-FourthGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A8313145E3F001A45A8 /* Device-iPod-FourthGen.png */; };
-		C6C84A9813145E3F001A45A8 /* Device-iPod-FourthGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C84A8413145E3F001A45A8 /* Device-iPod-FourthGen@2x.png */; };
 		C6E9503112A2B1D100E67841 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502812A2B1D100E67841 /* NSObject+SBJSON.m */; };
 		C6E9503212A2B1D100E67841 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502A12A2B1D100E67841 /* NSString+SBJSON.m */; };
 		C6E9503312A2B1D100E67841 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9502C12A2B1D100E67841 /* SBJsonBase.m */; };
@@ -100,6 +132,58 @@
 		8D1107320486CEB800E47090 /* Sosumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sosumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63D7E1012A461B60003333A /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		C64C923712A4EB4300B26006 /* Sosumi.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = Sosumi.sdef; sourceTree = "<group>"; };
+		C65111B2131565FF00833F2F /* Device-Generic-Generic-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic-mini.png"; sourceTree = "<group>"; };
+		C65111B3131565FF00833F2F /* Device-Generic-Generic-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic-mini@2x.png"; sourceTree = "<group>"; };
+		C65111B4131565FF00833F2F /* Device-Generic-Generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic.png"; sourceTree = "<group>"; };
+		C65111B5131565FF00833F2F /* Device-Generic-Generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic@2x.png"; sourceTree = "<group>"; };
+		C65111B6131565FF00833F2F /* Device-iPad-FirstGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-FirstGen-mini.png"; sourceTree = "<group>"; };
+		C65111B7131565FF00833F2F /* Device-iPad-FirstGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-FirstGen-mini@2x.png"; sourceTree = "<group>"; };
+		C65111B8131565FF00833F2F /* Device-iPad-FirstGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-FirstGen.png"; sourceTree = "<group>"; };
+		C65111B9131565FF00833F2F /* Device-iPad-FirstGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-FirstGen@2x.png"; sourceTree = "<group>"; };
+		C65111BA131565FF00833F2F /* Device-iPad-Generic-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-Generic-mini.png"; sourceTree = "<group>"; };
+		C65111BB131565FF00833F2F /* Device-iPad-Generic-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-Generic-mini@2x.png"; sourceTree = "<group>"; };
+		C65111BC131565FF00833F2F /* Device-iPad-Generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-Generic.png"; sourceTree = "<group>"; };
+		C65111BD131565FF00833F2F /* Device-iPad-Generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-Generic@2x.png"; sourceTree = "<group>"; };
+		C65111BE131565FF00833F2F /* Device-iPhone-3G-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-3G-mini.png"; sourceTree = "<group>"; };
+		C65111BF131565FF00833F2F /* Device-iPhone-3G-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-3G-mini@2x.png"; sourceTree = "<group>"; };
+		C65111C0131565FF00833F2F /* Device-iPhone-3G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-3G.png"; sourceTree = "<group>"; };
+		C65111C1131565FF00833F2F /* Device-iPhone-3G@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-3G@2x.png"; sourceTree = "<group>"; };
+		C65111C2131565FF00833F2F /* Device-iPhone-3GS-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-3GS-mini.png"; sourceTree = "<group>"; };
+		C65111C3131565FF00833F2F /* Device-iPhone-3GS-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-3GS-mini@2x.png"; sourceTree = "<group>"; };
+		C65111C4131565FF00833F2F /* Device-iPhone-3GS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-3GS.png"; sourceTree = "<group>"; };
+		C65111C5131565FF00833F2F /* Device-iPhone-3GS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-3GS@2x.png"; sourceTree = "<group>"; };
+		C65111C6131565FF00833F2F /* Device-iPhone-FirstGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FirstGen-mini.png"; sourceTree = "<group>"; };
+		C65111C7131565FF00833F2F /* Device-iPhone-FirstGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FirstGen-mini@2x.png"; sourceTree = "<group>"; };
+		C65111C8131565FF00833F2F /* Device-iPhone-FirstGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FirstGen.png"; sourceTree = "<group>"; };
+		C65111C9131565FF00833F2F /* Device-iPhone-FirstGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FirstGen@2x.png"; sourceTree = "<group>"; };
+		C65111CA131565FF00833F2F /* Device-iPhone-FourthGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FourthGen-mini.png"; sourceTree = "<group>"; };
+		C65111CB131565FF00833F2F /* Device-iPhone-FourthGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FourthGen-mini@2x.png"; sourceTree = "<group>"; };
+		C65111CC131565FF00833F2F /* Device-iPhone-FourthGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FourthGen.png"; sourceTree = "<group>"; };
+		C65111CD131565FF00833F2F /* Device-iPhone-FourthGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FourthGen@2x.png"; sourceTree = "<group>"; };
+		C65111CE131565FF00833F2F /* Device-iPhone-Generic-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-Generic-mini.png"; sourceTree = "<group>"; };
+		C65111CF131565FF00833F2F /* Device-iPhone-Generic-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-Generic-mini@2x.png"; sourceTree = "<group>"; };
+		C65111D0131565FF00833F2F /* Device-iPhone-Generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-Generic.png"; sourceTree = "<group>"; };
+		C65111D1131565FF00833F2F /* Device-iPhone-Generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-Generic@2x.png"; sourceTree = "<group>"; };
+		C65111D2131565FF00833F2F /* Device-iPod-FirstGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FirstGen-mini.png"; sourceTree = "<group>"; };
+		C65111D3131565FF00833F2F /* Device-iPod-FirstGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FirstGen-mini@2x.png"; sourceTree = "<group>"; };
+		C65111D4131565FF00833F2F /* Device-iPod-FirstGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FirstGen.png"; sourceTree = "<group>"; };
+		C65111D5131565FF00833F2F /* Device-iPod-FirstGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FirstGen@2x.png"; sourceTree = "<group>"; };
+		C65111D6131565FF00833F2F /* Device-iPod-FourthGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FourthGen-mini.png"; sourceTree = "<group>"; };
+		C65111D7131565FF00833F2F /* Device-iPod-FourthGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FourthGen-mini@2x.png"; sourceTree = "<group>"; };
+		C65111D8131565FF00833F2F /* Device-iPod-FourthGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FourthGen.png"; sourceTree = "<group>"; };
+		C65111D9131565FF00833F2F /* Device-iPod-FourthGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FourthGen@2x.png"; sourceTree = "<group>"; };
+		C65111DA131565FF00833F2F /* Device-iPod-Generic-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-Generic-mini.png"; sourceTree = "<group>"; };
+		C65111DB131565FF00833F2F /* Device-iPod-Generic-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-Generic-mini@2x.png"; sourceTree = "<group>"; };
+		C65111DC131565FF00833F2F /* Device-iPod-Generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-Generic.png"; sourceTree = "<group>"; };
+		C65111DD131565FF00833F2F /* Device-iPod-Generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-Generic@2x.png"; sourceTree = "<group>"; };
+		C65111DE131565FF00833F2F /* Device-iPod-SecondGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-SecondGen-mini.png"; sourceTree = "<group>"; };
+		C65111DF131565FF00833F2F /* Device-iPod-SecondGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-SecondGen-mini@2x.png"; sourceTree = "<group>"; };
+		C65111E0131565FF00833F2F /* Device-iPod-SecondGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-SecondGen.png"; sourceTree = "<group>"; };
+		C65111E1131565FF00833F2F /* Device-iPod-SecondGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-SecondGen@2x.png"; sourceTree = "<group>"; };
+		C65111E2131565FF00833F2F /* Device-iPod-ThirdGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-ThirdGen-mini.png"; sourceTree = "<group>"; };
+		C65111E3131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-ThirdGen-mini@2x.png"; sourceTree = "<group>"; };
+		C65111E4131565FF00833F2F /* Device-iPod-ThirdGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-ThirdGen.png"; sourceTree = "<group>"; };
+		C65111E5131565FF00833F2F /* Device-iPod-ThirdGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-ThirdGen@2x.png"; sourceTree = "<group>"; };
 		C65884A912A4320E0054B0B4 /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainItem.h; sourceTree = "<group>"; };
 		C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
 		C65884B112A433290054B0B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -139,26 +223,6 @@
 		C6C849ED13145254001A45A8 /* THNetworkActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNetworkActivityManager.m; sourceTree = "<group>"; };
 		C6C849EF13145297001A45A8 /* THNetworkActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNetworkActivityCell.h; sourceTree = "<group>"; };
 		C6C849F013145297001A45A8 /* THNetworkActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNetworkActivityCell.m; sourceTree = "<group>"; };
-		C6C84A7113145E3F001A45A8 /* Device-iPad-FirstGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-FirstGen-mini.png"; sourceTree = "<group>"; };
-		C6C84A7213145E3F001A45A8 /* Device-iPad-FirstGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-FirstGen-mini@2x.png"; sourceTree = "<group>"; };
-		C6C84A7313145E3F001A45A8 /* Device-iPad-FirstGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-FirstGen.png"; sourceTree = "<group>"; };
-		C6C84A7413145E3F001A45A8 /* Device-iPad-FirstGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-FirstGen@2x.png"; sourceTree = "<group>"; };
-		C6C84A7513145E3F001A45A8 /* Device-iPhone-FirstGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FirstGen-mini.png"; sourceTree = "<group>"; };
-		C6C84A7613145E3F001A45A8 /* Device-iPhone-FirstGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FirstGen-mini@2x.png"; sourceTree = "<group>"; };
-		C6C84A7713145E3F001A45A8 /* Device-iPhone-FirstGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FirstGen.png"; sourceTree = "<group>"; };
-		C6C84A7813145E3F001A45A8 /* Device-iPhone-FirstGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FirstGen@2x.png"; sourceTree = "<group>"; };
-		C6C84A7913145E3F001A45A8 /* Device-iPhone-FourthGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FourthGen-mini.png"; sourceTree = "<group>"; };
-		C6C84A7A13145E3F001A45A8 /* Device-iPhone-FourthGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FourthGen-mini@2x.png"; sourceTree = "<group>"; };
-		C6C84A7B13145E3F001A45A8 /* Device-iPhone-FourthGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FourthGen.png"; sourceTree = "<group>"; };
-		C6C84A7C13145E3F001A45A8 /* Device-iPhone-FourthGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPhone-FourthGen@2x.png"; sourceTree = "<group>"; };
-		C6C84A7D13145E3F001A45A8 /* Device-iPod-FirstGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FirstGen-mini.png"; sourceTree = "<group>"; };
-		C6C84A7E13145E3F001A45A8 /* Device-iPod-FirstGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FirstGen-mini@2x.png"; sourceTree = "<group>"; };
-		C6C84A7F13145E3F001A45A8 /* Device-iPod-FirstGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FirstGen.png"; sourceTree = "<group>"; };
-		C6C84A8013145E3F001A45A8 /* Device-iPod-FirstGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FirstGen@2x.png"; sourceTree = "<group>"; };
-		C6C84A8113145E3F001A45A8 /* Device-iPod-FourthGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FourthGen-mini.png"; sourceTree = "<group>"; };
-		C6C84A8213145E3F001A45A8 /* Device-iPod-FourthGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FourthGen-mini@2x.png"; sourceTree = "<group>"; };
-		C6C84A8313145E3F001A45A8 /* Device-iPod-FourthGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FourthGen.png"; sourceTree = "<group>"; };
-		C6C84A8413145E3F001A45A8 /* Device-iPod-FourthGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-FourthGen@2x.png"; sourceTree = "<group>"; };
 		C6E9502612A2B1D100E67841 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		C6E9502712A2B1D100E67841 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		C6E9502812A2B1D100E67841 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -325,26 +389,58 @@
 		C6C84A7013145E3F001A45A8 /* DeviceIcons */ = {
 			isa = PBXGroup;
 			children = (
-				C6C84A7113145E3F001A45A8 /* Device-iPad-FirstGen-mini.png */,
-				C6C84A7213145E3F001A45A8 /* Device-iPad-FirstGen-mini@2x.png */,
-				C6C84A7313145E3F001A45A8 /* Device-iPad-FirstGen.png */,
-				C6C84A7413145E3F001A45A8 /* Device-iPad-FirstGen@2x.png */,
-				C6C84A7513145E3F001A45A8 /* Device-iPhone-FirstGen-mini.png */,
-				C6C84A7613145E3F001A45A8 /* Device-iPhone-FirstGen-mini@2x.png */,
-				C6C84A7713145E3F001A45A8 /* Device-iPhone-FirstGen.png */,
-				C6C84A7813145E3F001A45A8 /* Device-iPhone-FirstGen@2x.png */,
-				C6C84A7913145E3F001A45A8 /* Device-iPhone-FourthGen-mini.png */,
-				C6C84A7A13145E3F001A45A8 /* Device-iPhone-FourthGen-mini@2x.png */,
-				C6C84A7B13145E3F001A45A8 /* Device-iPhone-FourthGen.png */,
-				C6C84A7C13145E3F001A45A8 /* Device-iPhone-FourthGen@2x.png */,
-				C6C84A7D13145E3F001A45A8 /* Device-iPod-FirstGen-mini.png */,
-				C6C84A7E13145E3F001A45A8 /* Device-iPod-FirstGen-mini@2x.png */,
-				C6C84A7F13145E3F001A45A8 /* Device-iPod-FirstGen.png */,
-				C6C84A8013145E3F001A45A8 /* Device-iPod-FirstGen@2x.png */,
-				C6C84A8113145E3F001A45A8 /* Device-iPod-FourthGen-mini.png */,
-				C6C84A8213145E3F001A45A8 /* Device-iPod-FourthGen-mini@2x.png */,
-				C6C84A8313145E3F001A45A8 /* Device-iPod-FourthGen.png */,
-				C6C84A8413145E3F001A45A8 /* Device-iPod-FourthGen@2x.png */,
+				C65111B2131565FF00833F2F /* Device-Generic-Generic-mini.png */,
+				C65111B3131565FF00833F2F /* Device-Generic-Generic-mini@2x.png */,
+				C65111B4131565FF00833F2F /* Device-Generic-Generic.png */,
+				C65111B5131565FF00833F2F /* Device-Generic-Generic@2x.png */,
+				C65111B6131565FF00833F2F /* Device-iPad-FirstGen-mini.png */,
+				C65111B7131565FF00833F2F /* Device-iPad-FirstGen-mini@2x.png */,
+				C65111B8131565FF00833F2F /* Device-iPad-FirstGen.png */,
+				C65111B9131565FF00833F2F /* Device-iPad-FirstGen@2x.png */,
+				C65111BA131565FF00833F2F /* Device-iPad-Generic-mini.png */,
+				C65111BB131565FF00833F2F /* Device-iPad-Generic-mini@2x.png */,
+				C65111BC131565FF00833F2F /* Device-iPad-Generic.png */,
+				C65111BD131565FF00833F2F /* Device-iPad-Generic@2x.png */,
+				C65111BE131565FF00833F2F /* Device-iPhone-3G-mini.png */,
+				C65111BF131565FF00833F2F /* Device-iPhone-3G-mini@2x.png */,
+				C65111C0131565FF00833F2F /* Device-iPhone-3G.png */,
+				C65111C1131565FF00833F2F /* Device-iPhone-3G@2x.png */,
+				C65111C2131565FF00833F2F /* Device-iPhone-3GS-mini.png */,
+				C65111C3131565FF00833F2F /* Device-iPhone-3GS-mini@2x.png */,
+				C65111C4131565FF00833F2F /* Device-iPhone-3GS.png */,
+				C65111C5131565FF00833F2F /* Device-iPhone-3GS@2x.png */,
+				C65111C6131565FF00833F2F /* Device-iPhone-FirstGen-mini.png */,
+				C65111C7131565FF00833F2F /* Device-iPhone-FirstGen-mini@2x.png */,
+				C65111C8131565FF00833F2F /* Device-iPhone-FirstGen.png */,
+				C65111C9131565FF00833F2F /* Device-iPhone-FirstGen@2x.png */,
+				C65111CA131565FF00833F2F /* Device-iPhone-FourthGen-mini.png */,
+				C65111CB131565FF00833F2F /* Device-iPhone-FourthGen-mini@2x.png */,
+				C65111CC131565FF00833F2F /* Device-iPhone-FourthGen.png */,
+				C65111CD131565FF00833F2F /* Device-iPhone-FourthGen@2x.png */,
+				C65111CE131565FF00833F2F /* Device-iPhone-Generic-mini.png */,
+				C65111CF131565FF00833F2F /* Device-iPhone-Generic-mini@2x.png */,
+				C65111D0131565FF00833F2F /* Device-iPhone-Generic.png */,
+				C65111D1131565FF00833F2F /* Device-iPhone-Generic@2x.png */,
+				C65111D2131565FF00833F2F /* Device-iPod-FirstGen-mini.png */,
+				C65111D3131565FF00833F2F /* Device-iPod-FirstGen-mini@2x.png */,
+				C65111D4131565FF00833F2F /* Device-iPod-FirstGen.png */,
+				C65111D5131565FF00833F2F /* Device-iPod-FirstGen@2x.png */,
+				C65111D6131565FF00833F2F /* Device-iPod-FourthGen-mini.png */,
+				C65111D7131565FF00833F2F /* Device-iPod-FourthGen-mini@2x.png */,
+				C65111D8131565FF00833F2F /* Device-iPod-FourthGen.png */,
+				C65111D9131565FF00833F2F /* Device-iPod-FourthGen@2x.png */,
+				C65111DA131565FF00833F2F /* Device-iPod-Generic-mini.png */,
+				C65111DB131565FF00833F2F /* Device-iPod-Generic-mini@2x.png */,
+				C65111DC131565FF00833F2F /* Device-iPod-Generic.png */,
+				C65111DD131565FF00833F2F /* Device-iPod-Generic@2x.png */,
+				C65111DE131565FF00833F2F /* Device-iPod-SecondGen-mini.png */,
+				C65111DF131565FF00833F2F /* Device-iPod-SecondGen-mini@2x.png */,
+				C65111E0131565FF00833F2F /* Device-iPod-SecondGen.png */,
+				C65111E1131565FF00833F2F /* Device-iPod-SecondGen@2x.png */,
+				C65111E2131565FF00833F2F /* Device-iPod-ThirdGen-mini.png */,
+				C65111E3131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png */,
+				C65111E4131565FF00833F2F /* Device-iPod-ThirdGen.png */,
+				C65111E5131565FF00833F2F /* Device-iPod-ThirdGen@2x.png */,
 			);
 			path = DeviceIcons;
 			sourceTree = "<group>";
@@ -448,26 +544,58 @@
 				C65885E012A453C50054B0B4 /* dsa_pub.pem in Resources */,
 				C63D7E1112A461B60003333A /* Credits.rtf in Resources */,
 				C64C923812A4EB4300B26006 /* Sosumi.sdef in Resources */,
-				C6C84A8513145E3F001A45A8 /* Device-iPad-FirstGen-mini.png in Resources */,
-				C6C84A8613145E3F001A45A8 /* Device-iPad-FirstGen-mini@2x.png in Resources */,
-				C6C84A8713145E3F001A45A8 /* Device-iPad-FirstGen.png in Resources */,
-				C6C84A8813145E3F001A45A8 /* Device-iPad-FirstGen@2x.png in Resources */,
-				C6C84A8913145E3F001A45A8 /* Device-iPhone-FirstGen-mini.png in Resources */,
-				C6C84A8A13145E3F001A45A8 /* Device-iPhone-FirstGen-mini@2x.png in Resources */,
-				C6C84A8B13145E3F001A45A8 /* Device-iPhone-FirstGen.png in Resources */,
-				C6C84A8C13145E3F001A45A8 /* Device-iPhone-FirstGen@2x.png in Resources */,
-				C6C84A8D13145E3F001A45A8 /* Device-iPhone-FourthGen-mini.png in Resources */,
-				C6C84A8E13145E3F001A45A8 /* Device-iPhone-FourthGen-mini@2x.png in Resources */,
-				C6C84A8F13145E3F001A45A8 /* Device-iPhone-FourthGen.png in Resources */,
-				C6C84A9013145E3F001A45A8 /* Device-iPhone-FourthGen@2x.png in Resources */,
-				C6C84A9113145E3F001A45A8 /* Device-iPod-FirstGen-mini.png in Resources */,
-				C6C84A9213145E3F001A45A8 /* Device-iPod-FirstGen-mini@2x.png in Resources */,
-				C6C84A9313145E3F001A45A8 /* Device-iPod-FirstGen.png in Resources */,
-				C6C84A9413145E3F001A45A8 /* Device-iPod-FirstGen@2x.png in Resources */,
-				C6C84A9513145E3F001A45A8 /* Device-iPod-FourthGen-mini.png in Resources */,
-				C6C84A9613145E3F001A45A8 /* Device-iPod-FourthGen-mini@2x.png in Resources */,
-				C6C84A9713145E3F001A45A8 /* Device-iPod-FourthGen.png in Resources */,
-				C6C84A9813145E3F001A45A8 /* Device-iPod-FourthGen@2x.png in Resources */,
+				C65111E6131565FF00833F2F /* Device-Generic-Generic-mini.png in Resources */,
+				C65111E7131565FF00833F2F /* Device-Generic-Generic-mini@2x.png in Resources */,
+				C65111E8131565FF00833F2F /* Device-Generic-Generic.png in Resources */,
+				C65111E9131565FF00833F2F /* Device-Generic-Generic@2x.png in Resources */,
+				C65111EA131565FF00833F2F /* Device-iPad-FirstGen-mini.png in Resources */,
+				C65111EB131565FF00833F2F /* Device-iPad-FirstGen-mini@2x.png in Resources */,
+				C65111EC131565FF00833F2F /* Device-iPad-FirstGen.png in Resources */,
+				C65111ED131565FF00833F2F /* Device-iPad-FirstGen@2x.png in Resources */,
+				C65111EE131565FF00833F2F /* Device-iPad-Generic-mini.png in Resources */,
+				C65111EF131565FF00833F2F /* Device-iPad-Generic-mini@2x.png in Resources */,
+				C65111F0131565FF00833F2F /* Device-iPad-Generic.png in Resources */,
+				C65111F1131565FF00833F2F /* Device-iPad-Generic@2x.png in Resources */,
+				C65111F2131565FF00833F2F /* Device-iPhone-3G-mini.png in Resources */,
+				C65111F3131565FF00833F2F /* Device-iPhone-3G-mini@2x.png in Resources */,
+				C65111F4131565FF00833F2F /* Device-iPhone-3G.png in Resources */,
+				C65111F5131565FF00833F2F /* Device-iPhone-3G@2x.png in Resources */,
+				C65111F6131565FF00833F2F /* Device-iPhone-3GS-mini.png in Resources */,
+				C65111F7131565FF00833F2F /* Device-iPhone-3GS-mini@2x.png in Resources */,
+				C65111F8131565FF00833F2F /* Device-iPhone-3GS.png in Resources */,
+				C65111F9131565FF00833F2F /* Device-iPhone-3GS@2x.png in Resources */,
+				C65111FA131565FF00833F2F /* Device-iPhone-FirstGen-mini.png in Resources */,
+				C65111FB131565FF00833F2F /* Device-iPhone-FirstGen-mini@2x.png in Resources */,
+				C65111FC131565FF00833F2F /* Device-iPhone-FirstGen.png in Resources */,
+				C65111FD131565FF00833F2F /* Device-iPhone-FirstGen@2x.png in Resources */,
+				C65111FE131565FF00833F2F /* Device-iPhone-FourthGen-mini.png in Resources */,
+				C65111FF131565FF00833F2F /* Device-iPhone-FourthGen-mini@2x.png in Resources */,
+				C6511200131565FF00833F2F /* Device-iPhone-FourthGen.png in Resources */,
+				C6511201131565FF00833F2F /* Device-iPhone-FourthGen@2x.png in Resources */,
+				C6511202131565FF00833F2F /* Device-iPhone-Generic-mini.png in Resources */,
+				C6511203131565FF00833F2F /* Device-iPhone-Generic-mini@2x.png in Resources */,
+				C6511204131565FF00833F2F /* Device-iPhone-Generic.png in Resources */,
+				C6511205131565FF00833F2F /* Device-iPhone-Generic@2x.png in Resources */,
+				C6511206131565FF00833F2F /* Device-iPod-FirstGen-mini.png in Resources */,
+				C6511207131565FF00833F2F /* Device-iPod-FirstGen-mini@2x.png in Resources */,
+				C6511208131565FF00833F2F /* Device-iPod-FirstGen.png in Resources */,
+				C6511209131565FF00833F2F /* Device-iPod-FirstGen@2x.png in Resources */,
+				C651120A131565FF00833F2F /* Device-iPod-FourthGen-mini.png in Resources */,
+				C651120B131565FF00833F2F /* Device-iPod-FourthGen-mini@2x.png in Resources */,
+				C651120C131565FF00833F2F /* Device-iPod-FourthGen.png in Resources */,
+				C651120D131565FF00833F2F /* Device-iPod-FourthGen@2x.png in Resources */,
+				C651120E131565FF00833F2F /* Device-iPod-Generic-mini.png in Resources */,
+				C651120F131565FF00833F2F /* Device-iPod-Generic-mini@2x.png in Resources */,
+				C6511210131565FF00833F2F /* Device-iPod-Generic.png in Resources */,
+				C6511211131565FF00833F2F /* Device-iPod-Generic@2x.png in Resources */,
+				C6511212131565FF00833F2F /* Device-iPod-SecondGen-mini.png in Resources */,
+				C6511213131565FF00833F2F /* Device-iPod-SecondGen-mini@2x.png in Resources */,
+				C6511214131565FF00833F2F /* Device-iPod-SecondGen.png in Resources */,
+				C6511215131565FF00833F2F /* Device-iPod-SecondGen@2x.png in Resources */,
+				C6511216131565FF00833F2F /* Device-iPod-ThirdGen-mini.png in Resources */,
+				C6511217131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png in Resources */,
+				C6511218131565FF00833F2F /* Device-iPod-ThirdGen.png in Resources */,
+				C6511219131565FF00833F2F /* Device-iPod-ThirdGen@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
