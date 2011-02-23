@@ -66,6 +66,7 @@
 		C6511217131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E3131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png */; };
 		C6511218131565FF00833F2F /* Device-iPod-ThirdGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E4131565FF00833F2F /* Device-iPod-ThirdGen.png */; };
 		C6511219131565FF00833F2F /* Device-iPod-ThirdGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65111E5131565FF00833F2F /* Device-iPod-ThirdGen@2x.png */; };
+		C651121B1315681100833F2F /* deviceIcons.sh in Resources */ = {isa = PBXBuildFile; fileRef = C651121A1315681100833F2F /* deviceIcons.sh */; };
 		C65884AB12A4320E0054B0B4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */; };
 		C65884B212A433290054B0B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65884B112A433290054B0B4 /* Security.framework */; };
 		C658856C12A448BD0054B0B4 /* remove.icns in Resources */ = {isa = PBXBuildFile; fileRef = C658856A12A448BD0054B0B4 /* remove.icns */; };
@@ -184,6 +185,7 @@
 		C65111E3131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-ThirdGen-mini@2x.png"; sourceTree = "<group>"; };
 		C65111E4131565FF00833F2F /* Device-iPod-ThirdGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-ThirdGen.png"; sourceTree = "<group>"; };
 		C65111E5131565FF00833F2F /* Device-iPod-ThirdGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPod-ThirdGen@2x.png"; sourceTree = "<group>"; };
+		C651121A1315681100833F2F /* deviceIcons.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = deviceIcons.sh; sourceTree = "<group>"; };
 		C65884A912A4320E0054B0B4 /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainItem.h; sourceTree = "<group>"; };
 		C65884AA12A4320E0054B0B4 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
 		C65884B112A433290054B0B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -330,6 +332,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C651121A1315681100833F2F /* deviceIcons.sh */,
 				C6C84A7013145E3F001A45A8 /* DeviceIcons */,
 				C63D7E1012A461B60003333A /* Credits.rtf */,
 				C65885DF12A453C50054B0B4 /* dsa_pub.pem */,
@@ -596,6 +599,7 @@
 				C6511217131565FF00833F2F /* Device-iPod-ThirdGen-mini@2x.png in Resources */,
 				C6511218131565FF00833F2F /* Device-iPod-ThirdGen.png in Resources */,
 				C6511219131565FF00833F2F /* Device-iPod-ThirdGen@2x.png in Resources */,
+				C651121B1315681100833F2F /* deviceIcons.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
