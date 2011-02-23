@@ -27,7 +27,7 @@ static NetworkSpinner *_me = nil;
 }
 
 - (void)realQueue {
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"SHOW_SPINNER" object:self];
+	// [[NSNotificationCenter defaultCenter] postNotificationName:@"SHOW_SPINNER" object:self];
 	count++;
 }
 
@@ -35,7 +35,7 @@ static NetworkSpinner *_me = nil;
 	count--;
 	if(count <= 0) {
 		count = 0;
-		[[NSNotificationCenter defaultCenter] postNotificationName:@"HIDE_SPINNER" object:self];
+		// [[NSNotificationCenter defaultCenter] postNotificationName:@"HIDE_SPINNER" object:self];
 	}
 }
 

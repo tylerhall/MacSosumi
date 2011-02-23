@@ -23,13 +23,13 @@
 
 - (void)addRequest:(NSNotification *)notification {
 	[self addObject:[notification object]];
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"SOSUMI_DID_BEGIN" object:nil];
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"SHOW_SPINNER" object:nil];
 }
 
 - (void)removeRequest:(NSNotification *)notification {
 	[self removeObject:[notification object]];
 	if([[self content] count] == 0) {
-		[[NSNotificationCenter defaultCenter] postNotificationName:@"SOSUMI_DID_FINISH" object:nil];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"HIDE_SPINNER" object:nil];
 	}
 }
 
