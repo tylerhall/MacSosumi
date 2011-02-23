@@ -92,7 +92,7 @@
 					for(int i = 0; i < [childNodes count]; i++) {
 						if([[(SSMDevice *)[[childNodes objectAtIndex:i] representedObject] deviceId] isEqualToString:[rawDevice objectForKey:@"id"]]) {
 							found = YES;
-							device = [childNodes objectAtIndex:i];
+							device = [[childNodes objectAtIndex:i] representedObject]; 
 							break;
 						}
 					}
@@ -192,9 +192,8 @@
 
 	[NetworkSpinner queue];
 	[fetcher beginFetchWithCompletionHandler:^(NSData *retrievedData, NSError *error) {
-		// NSLog(@"%@", [[NSString alloc] initWithData:retrievedData encoding:NSUTF8StringEncoding]);
 		[NetworkSpinner dequeue];
-	}];	
+	}];
 }
 
 - (GTMHTTPFetcher *)getPreparedFetcherWithMethod:(NSString *)method
@@ -204,8 +203,7 @@
 	if(!self.partition)
 		urlStr = [NSString stringWithFormat:@"https://fmipmobile.me.com/fmipservice/device/%@/%@", self.username, method];
 	else
-		urlStr = [NSString stringWithFormat:@"https://%@/fmipservice/device/%@/%@"
-				  , self.partition, self.username, method];
+		urlStr = [NSString stringWithFormat:@"https://%@/fmipservice/device/%@/%@", self.partition, self.username, method];
 
 	NSURL *url = [NSURL URLWithString:urlStr];
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
