@@ -145,6 +145,10 @@
 
 - (IBAction)removeAccountWasClicked:(id)sender
 {
+	if([[treeController selectedNodes] count] == 0) {
+		return;
+	}
+	
 	NSTreeNode *treeNode = [[treeController selectedNodes] objectAtIndex:0];
 	SSMAccount *account = [[[treeNode parentNode] representedObject] representedObject];
 	
@@ -176,6 +180,10 @@
 
 - (IBAction)viewOnMapWasClicked:(id)sender
 {
+	if([[treeController selectedNodes] count] == 0) {
+		return;
+	}
+	
 	NSTreeNode *node = [[treeController selectedNodes] objectAtIndex:0];
 	SSMDevice *device = [[node representedObject] representedObject];
 
@@ -202,6 +210,10 @@
 
 - (IBAction)lockDeviceWasClicked:(id)sender
 {
+	if([[treeController selectedNodes] count] == 0) {
+		return;
+	}
+	
 	NSTreeNode *node = [[treeController selectedNodes] objectAtIndex:0];
 	SSMDevice *device = [[node representedObject] representedObject];
 
@@ -248,6 +260,10 @@
 
 - (IBAction)confirmSendMessage:(id)sender
 {
+	if([[treeController selectedNodes] count] == 0) {
+		return;
+	}
+	
 	NSTreeNode *node = [[treeController selectedNodes] objectAtIndex:0];
 	SSMDevice *device = [[node representedObject] representedObject];
 	SSMAccount *account = [[[node parentNode] representedObject] representedObject];
@@ -259,6 +275,10 @@
 
 - (IBAction)copyCoordsWasClicked:(id)sender
 {
+	if([[treeController selectedNodes] count] == 0) {
+		return;
+	}
+	
 	NSTreeNode *node = [[treeController selectedNodes] objectAtIndex:0];
 	SSMDevice *device = [[node representedObject] representedObject];
 

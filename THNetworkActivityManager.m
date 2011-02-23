@@ -37,13 +37,15 @@
 	THNetworkActivityCell *cell = aCell;
 
 	if([aCell isMemberOfClass:[THNetworkActivityCell class]]) {
-		GTMHTTPFetcher *fetcher = [[self arrangedObjects] objectAtIndex:rowIndex];
-		NSDictionary *dict = [fetcher userData];
+		if(rowIndex < [[self arrangedObjects] count]) {
+			GTMHTTPFetcher *fetcher = [[self arrangedObjects] objectAtIndex:rowIndex];
+			NSDictionary *dict = [fetcher userData];
 
-		NSString *title = [dict valueForKey:@"title"];
-		NSString *subtitle = [dict valueForKey:@"subtitle"];
-		cell.title = title;
-		cell.subtitle = subtitle;
+			NSString *title = [dict valueForKey:@"title"];
+			NSString *subtitle = [dict valueForKey:@"subtitle"];
+			cell.title = title;
+			cell.subtitle = subtitle;
+		}
 	}
 }
 
