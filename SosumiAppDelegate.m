@@ -250,7 +250,7 @@
 	[treeController insertObject:treeNode atArrangedObjectIndexPath:[NSIndexPath indexPathWithIndex:0]];
 
 	NSMutableArray *accounts = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults] objectForKey:@"accounts"]];
-	[accounts addObject:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:kcItem.username, kcItem.password, nil] forKeys:[NSArray arrayWithObjects:@"username", @"password", nil]]];
+	[accounts addObject:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:kcItem.username, nil] forKeys:[NSArray arrayWithObjects:@"username", nil]]];
 	[[NSUserDefaults standardUserDefaults] setObject:accounts forKey:@"accounts"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 
