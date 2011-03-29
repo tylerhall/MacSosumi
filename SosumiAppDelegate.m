@@ -39,6 +39,17 @@
 		}
 	}
 
+	// In an old version we were storing the user's password in NSUserDefaults. After we switched to using the Keychain,
+	// we forgot to erase the old password from disk. This fixes that.
+	NSMutableArray *fixedAccounts = [NSMutableArray array];
+	for(int i = 0; i < [accounts count]; i++) {
+		NSDictionary *credentials = [accounts objectAtIndex:i];
+		NSDictionary *dict = [NSDictionary dictionaryWithObject:[credentials objectForKey:@"username"] forKey:@"username"];
+		[fixedAccounts addObject:dict];
+	}
+	[[NSUserDefaults standardUserDefaults] setObject:fixedAccounts forKey:@"accounts"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+
 	[self refreshOutline:nil];
 
 	NSString *html = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"map" ofType:@"html"]];
