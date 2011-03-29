@@ -84,6 +84,10 @@
 		C6AE74C112A3937300A7E976 /* THGradientBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AE74C012A3937300A7E976 /* THGradientBar.m */; };
 		C6AE74DF12A396D900A7E976 /* locate.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6AE74DE12A396D900A7E976 /* locate.icns */; };
 		C6AE750712A39A9900A7E976 /* NetworkSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AE750612A39A9900A7E976 /* NetworkSpinner.m */; };
+		C6B736EF13422BD100225975 /* Device-iPad-SecondGen.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B736EB13422BD100225975 /* Device-iPad-SecondGen.png */; };
+		C6B736F013422BD100225975 /* Device-iPad-SecondGen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B736EC13422BD100225975 /* Device-iPad-SecondGen@2x.png */; };
+		C6B736F113422BD100225975 /* Device-iPad-SecondGen-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B736ED13422BD100225975 /* Device-iPad-SecondGen-mini.png */; };
+		C6B736F213422BD100225975 /* Device-iPad-SecondGen-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B736EE13422BD100225975 /* Device-iPad-SecondGen-mini@2x.png */; };
 		C6C5C3F412A2408E0065A97B /* SSMAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C3F112A2408E0065A97B /* SSMAccount.m */; };
 		C6C5C3F512A2408E0065A97B /* SSMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C3F312A2408E0065A97B /* SSMDevice.m */; };
 		C6C5C3F912A2424C0065A97B /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6C5C3F812A2424C0065A97B /* Icon.icns */; };
@@ -206,6 +210,10 @@
 		C6AE74DE12A396D900A7E976 /* locate.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = locate.icns; sourceTree = "<group>"; };
 		C6AE750512A39A9900A7E976 /* NetworkSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkSpinner.h; sourceTree = "<group>"; };
 		C6AE750612A39A9900A7E976 /* NetworkSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkSpinner.m; sourceTree = "<group>"; };
+		C6B736EB13422BD100225975 /* Device-iPad-SecondGen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-SecondGen.png"; sourceTree = "<group>"; };
+		C6B736EC13422BD100225975 /* Device-iPad-SecondGen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-SecondGen@2x.png"; sourceTree = "<group>"; };
+		C6B736ED13422BD100225975 /* Device-iPad-SecondGen-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-SecondGen-mini.png"; sourceTree = "<group>"; };
+		C6B736EE13422BD100225975 /* Device-iPad-SecondGen-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-iPad-SecondGen-mini@2x.png"; sourceTree = "<group>"; };
 		C6C5C3F012A2408E0065A97B /* SSMAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMAccount.h; sourceTree = "<group>"; };
 		C6C5C3F112A2408E0065A97B /* SSMAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMAccount.m; sourceTree = "<group>"; };
 		C6C5C3F212A2408E0065A97B /* SSMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMDevice.h; sourceTree = "<group>"; };
@@ -392,6 +400,10 @@
 		C6C84A7013145E3F001A45A8 /* DeviceIcons */ = {
 			isa = PBXGroup;
 			children = (
+				C6B736EB13422BD100225975 /* Device-iPad-SecondGen.png */,
+				C6B736EC13422BD100225975 /* Device-iPad-SecondGen@2x.png */,
+				C6B736ED13422BD100225975 /* Device-iPad-SecondGen-mini.png */,
+				C6B736EE13422BD100225975 /* Device-iPad-SecondGen-mini@2x.png */,
 				C65111B2131565FF00833F2F /* Device-Generic-Generic-mini.png */,
 				C65111B3131565FF00833F2F /* Device-Generic-Generic-mini@2x.png */,
 				C65111B4131565FF00833F2F /* Device-Generic-Generic.png */,
@@ -600,6 +612,10 @@
 				C6511218131565FF00833F2F /* Device-iPod-ThirdGen.png in Resources */,
 				C6511219131565FF00833F2F /* Device-iPod-ThirdGen@2x.png in Resources */,
 				C651121B1315681100833F2F /* deviceIcons.sh in Resources */,
+				C6B736EF13422BD100225975 /* Device-iPad-SecondGen.png in Resources */,
+				C6B736F013422BD100225975 /* Device-iPad-SecondGen@2x.png in Resources */,
+				C6B736F113422BD100225975 /* Device-iPad-SecondGen-mini.png in Resources */,
+				C6B736F213422BD100225975 /* Device-iPad-SecondGen-mini@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
