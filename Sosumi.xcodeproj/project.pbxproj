@@ -71,8 +71,6 @@
 		C65884B212A433290054B0B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65884B112A433290054B0B4 /* Security.framework */; };
 		C658856C12A448BD0054B0B4 /* remove.icns in Resources */ = {isa = PBXBuildFile; fileRef = C658856A12A448BD0054B0B4 /* remove.icns */; };
 		C658856D12A448BD0054B0B4 /* add.icns in Resources */ = {isa = PBXBuildFile; fileRef = C658856B12A448BD0054B0B4 /* add.icns */; };
-		C65885B412A450430054B0B4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65885B312A450430054B0B4 /* Sparkle.framework */; };
-		C65885B912A4505B0054B0B4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65885B312A450430054B0B4 /* Sparkle.framework */; };
 		C65885E012A453C50054B0B4 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = C65885DF12A453C50054B0B4 /* dsa_pub.pem */; };
 		C6AE736312A374AD00A7E976 /* lock.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6AE736012A374AD00A7E976 /* lock.icns */; };
 		C6AE736412A374AD00A7E976 /* refresh.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6AE736112A374AD00A7E976 /* refresh.icns */; };
@@ -115,7 +113,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C65885B912A4505B0054B0B4 /* Sparkle.framework in Frameworks */,
 			);
 			name = Frameworks;
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +133,7 @@
 		8D1107310486CEB800E47090 /* Sosumi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sosumi-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Sosumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sosumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63D7E1012A461B60003333A /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
-		C64C923712A4EB4300B26006 /* Sosumi.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = Sosumi.sdef; sourceTree = "<group>"; };
+		C64C923712A4EB4300B26006 /* Sosumi.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sosumi.sdef; sourceTree = "<group>"; };
 		C65111B2131565FF00833F2F /* Device-Generic-Generic-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic-mini.png"; sourceTree = "<group>"; };
 		C65111B3131565FF00833F2F /* Device-Generic-Generic-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic-mini@2x.png"; sourceTree = "<group>"; };
 		C65111B4131565FF00833F2F /* Device-Generic-Generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic.png"; sourceTree = "<group>"; };
@@ -195,7 +192,6 @@
 		C65884B112A433290054B0B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C658856A12A448BD0054B0B4 /* remove.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = remove.icns; sourceTree = "<group>"; };
 		C658856B12A448BD0054B0B4 /* add.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = add.icns; sourceTree = "<group>"; };
-		C65885B312A450430054B0B4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		C65885DF12A453C50054B0B4 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		C6AE736012A374AD00A7E976 /* lock.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = lock.icns; sourceTree = "<group>"; };
 		C6AE736112A374AD00A7E976 /* refresh.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = refresh.icns; sourceTree = "<group>"; };
@@ -257,7 +253,6 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				C6EAB89912A30125004B6492 /* WebKit.framework in Frameworks */,
 				C65884B212A433290054B0B4 /* Security.framework in Frameworks */,
-				C65885B412A450430054B0B4 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +280,6 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C65885B312A450430054B0B4 /* Sparkle.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				C6EAB89812A30125004B6492 /* WebKit.framework */,
 				C65884B112A433290054B0B4 /* Security.framework */,
