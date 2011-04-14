@@ -78,6 +78,8 @@
 			NSLog(@"%@", error);
 			self.isRefreshing = NO;
 			[NetworkSpinner dequeue];
+            
+            [self performSelector:@selector(refresh) withObject:nil afterDelay:1.0];
 		}
 		else {
 			NSDictionary *json = [[[NSString alloc] initWithData:retrievedData encoding:NSUTF8StringEncoding] JSONValue];
@@ -128,11 +130,36 @@
 					}
 				}
 			}
+            
+            if([self.devices count] == 0) {
+                [self addPhonyDeviceWithMessage:@"No devices found"];
+            }
+
 			self.isRefreshing = NO;
 			[NetworkSpinner dequeue];
 			[[NSNotificationCenter defaultCenter] postNotificationName:@"DEVICES_DID_UPDATE" object:self];
 		}
 	}];
+}
+
+- (void)addPhonyDeviceWithMessage:(NSString *)msg {
+    [self.devices removeAllObjects];
+    [[self.treeNode mutableChildNodes] removeAllObjects];
+    
+    SSMDevice *device = [[SSMDevice alloc] init];
+    device.parent = self;
+    device.isLocating = NO;
+    device.deviceClass = @"";
+    device.deviceModel = @"";
+    device.deviceStatus = @"";
+    device.deviceId = [NSString stringWithFormat:@"%@-no-devices", self.username];
+    device.name = msg;
+    device.isCharging = NO;
+    device.batteryLevel = [NSNumber numberWithInt:0];
+    [self.devices setValue:device forKey:device.deviceId];
+    
+    NSTreeNode *deviceTreeNode = [NSTreeNode treeNodeWithRepresentedObject:device];
+    [[self.treeNode mutableChildNodes] addObject:deviceTreeNode];
 }
 
 - (void)getPartition
@@ -149,13 +176,13 @@
 				[NetworkSpinner dequeue];
 				[self refresh];
 			} else {
-				NSLog(@"Could not login to FMIP");
+                [self addPhonyDeviceWithMessage:@"Incorrect password"];
 				self.isRefreshing = NO;
 				[NetworkSpinner dequeue];
 			}
 
 		} else {
-			NSLog(@"Could not login to FMIP");
+            [self addPhonyDeviceWithMessage:@"Incorrect password"];
 			self.isRefreshing = NO;
 			[NetworkSpinner dequeue];
 		}

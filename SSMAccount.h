@@ -35,6 +35,8 @@
 - (void)beginUpdatingDevices;
 - (void)stopUpdatingDevices;
 
+- (void)addPhonyDeviceWithMessage:(NSString *)msg;
+
 - (void)refresh;
 - (void)getPartition;
 - (void)sendMessage:(NSString *)message withSubject:(NSString *)subject andAlarm:(BOOL)alarm toDevice:(NSString *)deviceId;

@@ -62,6 +62,10 @@
 	return NO;
 }
 
+- (BOOL)deviceSelected {
+    return ([[treeController selectedNodes] count] > 0);
+}
+
 #pragma mark -
 #pragma mark Outline View Delegates
 #pragma mark -
@@ -86,9 +90,14 @@
 	return NO;
 }
 
+- (void)outlineViewSelectionDidChange:(NSNotification *)notification {
+    [self willChangeValueForKey:@"deviceSelected"];
+    [self didChangeValueForKey:@"deviceSelected"];
+}
+
 - (BOOL)outlineView:(NSOutlineView *)outlineView shouldSelectItem:(id)item
 {
-	return ![[[item representedObject] representedObject] isKindOfClass:[SSMAccount class]];
+    return [[[item representedObject] representedObject] isKindOfClass:[SSMDevice class]];
 }
 
 - (void)refreshOutline:(NSNotification *)notification

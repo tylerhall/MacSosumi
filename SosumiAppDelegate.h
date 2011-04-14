@@ -31,6 +31,7 @@
 
 @property (nonatomic, retain) IBOutlet NSWindow *window;
 @property (nonatomic, retain) IBOutlet NSPanel *panelSyncActivity;
+@property (readonly) IBOutlet BOOL deviceSelected;
 
 - (void)refreshOutline:(NSNotification *)notification;
 - (void)refreshMap;
