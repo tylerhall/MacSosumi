@@ -136,7 +136,7 @@
 		8D1107310486CEB800E47090 /* Sosumi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sosumi-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Sosumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sosumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63D7E1012A461B60003333A /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
-		C64C923712A4EB4300B26006 /* Sosumi.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = Sosumi.sdef; sourceTree = "<group>"; };
+		C64C923712A4EB4300B26006 /* Sosumi.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sosumi.sdef; sourceTree = "<group>"; };
 		C65111B2131565FF00833F2F /* Device-Generic-Generic-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic-mini.png"; sourceTree = "<group>"; };
 		C65111B3131565FF00833F2F /* Device-Generic-Generic-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic-mini@2x.png"; sourceTree = "<group>"; };
 		C65111B4131565FF00833F2F /* Device-Generic-Generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Device-Generic-Generic.png"; sourceTree = "<group>"; };
@@ -675,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -696,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

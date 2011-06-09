@@ -144,8 +144,8 @@
 
 	[fetcher beginFetchWithCompletionHandler:^(NSData *retrievedData, NSError *error) {
 		if(error != nil) {
-			if([[fetcher responseHeaders] valueForKey:@"X-Apple-Mme-Host"]) {
-				self.partition = [[fetcher responseHeaders] valueForKey:@"X-Apple-Mme-Host"];
+			if([[fetcher responseHeaders] valueForKey:@"X-Apple-MMe-Host"]) {
+				self.partition = [[fetcher responseHeaders] valueForKey:@"X-Apple-MMe-Host"];
 				[NetworkSpinner dequeue];
 				[self refresh];
 			} else {
@@ -201,7 +201,7 @@
 	NSString *urlStr;
 
 	if(!self.partition)
-		urlStr = [NSString stringWithFormat:@"https://fmipmobile.me.com/fmipservice/device/%@/%@", self.username, method];
+		urlStr = [NSString stringWithFormat:@"https://fmipmobile.icloud.com/fmipservice/device/%@/%@", self.username, method];
 	else
 		urlStr = [NSString stringWithFormat:@"https://%@/fmipservice/device/%@/%@", self.partition, self.username, method];
 
@@ -210,7 +210,7 @@
 	[request addValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
 	[request addValue:@"2.0" forHTTPHeaderField:@"X-Apple-Find-Api-Ver"];
 	[request addValue:@"UserIdGuest" forHTTPHeaderField:@"X-Apple-Authscheme"];
-	[request addValue:@"1.0" forHTTPHeaderField:@"X-Apple-Realm-Support"];
+	[request addValue:@"1.2" forHTTPHeaderField:@"X-Apple-Realm-Support"];
 	[request addValue:@"Find iPhone/1.1 MeKit (iPad: iPhone OS/4.2.1)" forHTTPHeaderField:@"User-agent"];
 	[request addValue:@"iPad" forHTTPHeaderField:@"X-Client-Name"];
 	[request addValue:@"0cf3dc501ff812adb0b202baed4f37274b210853" forHTTPHeaderField:@"X-Client-Uuid"];
