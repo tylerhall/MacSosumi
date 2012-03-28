@@ -30,7 +30,8 @@
 	self = [super init];
 	
 	self.devices = [[NSMutableDictionary alloc] init];
-	
+    refreshTimerInterval = 10.0;
+
 	return self;
 }
 
@@ -48,7 +49,7 @@
 - (void)beginUpdatingDevices
 {
 	self.isUpdating = YES;
-	refreshTimer = [[NSTimer alloc] initWithFireDate:[NSDate date] interval:30.0 target:self selector:@selector(refresh) userInfo:nil repeats:YES];
+	refreshTimer = [[NSTimer alloc] initWithFireDate:[NSDate date] interval:refreshTimerInterval target:self selector:@selector(refresh) userInfo:nil repeats:YES];
 	[[NSRunLoop mainRunLoop] addTimer:refreshTimer forMode:NSDefaultRunLoopMode];
 }
 
@@ -82,6 +83,16 @@
 		else {
 			NSDictionary *json = [[[NSString alloc] initWithData:retrievedData encoding:NSUTF8StringEncoding] JSONValue];
 			// NSLog(@"%@", json);
+
+            // So we don't get throttled for hammering.
+            // https://github.com/tylerhall/MacSosumi/issues/8
+            NSDictionary *serverContext = [json objectForKey:@"serverContext"];
+            if(serverContext) {
+                refreshTimerInterval = [[serverContext valueForKey:@"callbackIntervalInMS"] floatValue] / 1000;
+            } else {
+                refreshTimerInterval = 30.0;
+            }
+            
 			NSArray *rawDevices = [json objectForKey:@"content"];
 			if(rawDevices) {
 				for(NSDictionary *rawDevice in rawDevices) {

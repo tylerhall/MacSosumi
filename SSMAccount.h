@@ -18,8 +18,9 @@
 	BOOL isUpdating;
 	BOOL isRefreshing;
 	NSTreeNode *treeNode;
-	
+
 	NSTimer *refreshTimer;
+    NSTimeInterval refreshTimerInterval;
 }
 
 @property (nonatomic, retain) NSString *username;
