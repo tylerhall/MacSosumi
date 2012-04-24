@@ -5,9 +5,9 @@ A Mac OS X desktop client for Apple's [Find My iPhone service](http://www.apple.
 
 MacSosumi was made possible by the work of the original [Sosumi](https://github.com/tylerhall/sosumi) project.
 
-Much love to the MobileMe team for a wonderful service :-)
+Much love to the iCloud team for a wonderful service :-)
 
-![http://cdn.tyler.fm/images/sosumi-ss1.png](http://cdn.tyler.fm/images/sosumi-ss1.png)
+![http://cdn.clickontyler.com/images/sosumi-ss1.png](http://cdn.clickontyler.com/images/sosumi-ss1.png)
 
 INSTALL
 -------
