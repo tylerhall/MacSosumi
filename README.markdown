@@ -12,7 +12,7 @@ Much love to the iCloud team for a wonderful service :-)
 INSTALL
 -------
 
-MacSosumi requires Mac OS X 10.6 or later. You're welcome to download the source and build (and modify!) it yourself with Xcode. Or, you can download the [latest stable release](http://clickontyler.com/sosumi/download/).
+MacSosumi requires Mac OS X 10.7 or later. You're welcome to download the source and build (and modify!) it yourself with Xcode. Or, you can download the [latest stable release](http://clickontyler.com/sosumi/download/).
 
 UPDATES
 -------
@@ -24,7 +24,7 @@ LICENSE
 
 The MIT License
 
-Initial code Copyright (c) 2010 Tyler Hall <tylerhall AT gmail DOT com>
+Initial code Copyright (c) 2012 Tyler Hall <tylerhall AT gmail DOT com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
