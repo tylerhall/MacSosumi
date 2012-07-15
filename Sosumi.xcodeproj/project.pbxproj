@@ -92,9 +92,6 @@
 		C6C5C3F512A2408E0065A97B /* SSMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C3F312A2408E0065A97B /* SSMDevice.m */; };
 		C6C5C3F912A2424C0065A97B /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6C5C3F812A2424C0065A97B /* Icon.icns */; };
 		C6C5C40C12A242F50065A97B /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40512A242F50065A97B /* GTMHTTPFetcher.m */; };
-		C6C5C40D12A242F50065A97B /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40712A242F50065A97B /* GTMHTTPFetcherLogging.m */; };
-		C6C5C40E12A242F50065A97B /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40912A242F50065A97B /* GTMHTTPFetcherService.m */; };
-		C6C5C40F12A242F50065A97B /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C40B12A242F50065A97B /* GTMHTTPFetchHistory.m */; };
 		C6C5C43812A24DFE0065A97B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C5C43712A24DFE0065A97B /* NSData+Base64.m */; };
 		C6C849EE13145254001A45A8 /* THNetworkActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C849ED13145254001A45A8 /* THNetworkActivityManager.m */; };
 		C6C849F113145297001A45A8 /* THNetworkActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C849F013145297001A45A8 /* THNetworkActivityCell.m */; };
@@ -221,12 +218,6 @@
 		C6C5C3F812A2424C0065A97B /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		C6C5C40412A242F50065A97B /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
 		C6C5C40512A242F50065A97B /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
-		C6C5C40612A242F50065A97B /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherLogging.h; sourceTree = "<group>"; };
-		C6C5C40712A242F50065A97B /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherLogging.m; sourceTree = "<group>"; };
-		C6C5C40812A242F50065A97B /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherService.h; sourceTree = "<group>"; };
-		C6C5C40912A242F50065A97B /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherService.m; sourceTree = "<group>"; };
-		C6C5C40A12A242F50065A97B /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
-		C6C5C40B12A242F50065A97B /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
 		C6C5C43612A24DFE0065A97B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		C6C5C43712A24DFE0065A97B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		C6C849EC13145254001A45A8 /* THNetworkActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNetworkActivityManager.h; sourceTree = "<group>"; };
@@ -387,12 +378,6 @@
 			children = (
 				C6C5C40412A242F50065A97B /* GTMHTTPFetcher.h */,
 				C6C5C40512A242F50065A97B /* GTMHTTPFetcher.m */,
-				C6C5C40612A242F50065A97B /* GTMHTTPFetcherLogging.h */,
-				C6C5C40712A242F50065A97B /* GTMHTTPFetcherLogging.m */,
-				C6C5C40812A242F50065A97B /* GTMHTTPFetcherService.h */,
-				C6C5C40912A242F50065A97B /* GTMHTTPFetcherService.m */,
-				C6C5C40A12A242F50065A97B /* GTMHTTPFetchHistory.h */,
-				C6C5C40B12A242F50065A97B /* GTMHTTPFetchHistory.m */,
 			);
 			path = GTMHTTPFetcher;
 			sourceTree = "<group>";
@@ -631,9 +616,6 @@
 				C6C5C3F412A2408E0065A97B /* SSMAccount.m in Sources */,
 				C6C5C3F512A2408E0065A97B /* SSMDevice.m in Sources */,
 				C6C5C40C12A242F50065A97B /* GTMHTTPFetcher.m in Sources */,
-				C6C5C40D12A242F50065A97B /* GTMHTTPFetcherLogging.m in Sources */,
-				C6C5C40E12A242F50065A97B /* GTMHTTPFetcherService.m in Sources */,
-				C6C5C40F12A242F50065A97B /* GTMHTTPFetchHistory.m in Sources */,
 				C6C5C43812A24DFE0065A97B /* NSData+Base64.m in Sources */,
 				C6E9503112A2B1D100E67841 /* NSObject+SBJSON.m in Sources */,
 				C6E9503212A2B1D100E67841 /* NSString+SBJSON.m in Sources */,
@@ -722,9 +704,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -737,9 +720,10 @@
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};

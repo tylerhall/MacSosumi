@@ -52,7 +52,7 @@
 
 	[self refreshOutline:nil];
 
-	NSString *html = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"map" ofType:@"html"]];
+    NSString *html = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"map" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
 	[[map mainFrame] loadHTMLString:html baseURL:[NSURL URLWithString:@"http://maps.google.com"]];
 }
 

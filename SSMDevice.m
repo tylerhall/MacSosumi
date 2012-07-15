@@ -34,7 +34,7 @@
 {
 	// The GitHub URLs are just a workaround since me.com's images have been 404'ing lately...
 	// NSString *url = [NSString stringWithFormat:@"https://me.com/fmipmobile/deviceImages/Device-%@-%@-mini.png", self.deviceClass, self.deviceModel];
-	NSString *url = [NSString stringWithFormat:@"https://github.com/tylerhall/MacSosumi/raw/master/DeviceIcons/Device-Generic-Generic-mini.png", self.deviceClass, self.deviceModel];
+	NSString *url = [NSString stringWithFormat:@"https://github.com/tylerhall/MacSosumi/raw/master/DeviceIcons/Device-Generic-Generic-mini.png"]; //, self.deviceClass, self.deviceModel];
 	return url;
 }
 
