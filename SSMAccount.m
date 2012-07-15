@@ -119,8 +119,8 @@
 					device.deviceStatus = [rawDevice objectForKey:@"deviceStatus"];
 					device.deviceId = [rawDevice objectForKey:@"id"];
 					device.name = [rawDevice objectForKey:@"name"];
-					device.isCharging = [(NSString *)[rawDevice objectForKey:@"a"] isEqualToString:@"Charging"];
-					device.batteryLevel = [rawDevice objectForKey:@"b"];
+					device.isCharging = [(NSString *)[rawDevice objectForKey:@"batteryStatus"] isEqualToString:@"Charging"];
+					device.batteryLevel = [rawDevice objectForKey:@"batteryLevel"];
 
 					id location = [rawDevice objectForKey:@"location"];
 					if(location != [NSNull null]) {
