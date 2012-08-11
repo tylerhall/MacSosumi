@@ -23,7 +23,7 @@
 
 	NSMutableAttributedString *as = [[NSMutableAttributedString alloc] initWithString:self.subtitle];
 	NSFont *font = [NSFont systemFontOfSize:10.0];
-	NSDictionary *attrs = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, [NSColor blackColor], NSForegroundColorAttributeName, nil];
+	NSDictionary *attrs = @{NSFontAttributeName: font, NSForegroundColorAttributeName: [NSColor blackColor]};
 	[as addAttributes:attrs range:NSMakeRange(0, [as length])];
 	[as drawInRect:rect];
 }

@@ -38,7 +38,7 @@
 
 	if([aCell isMemberOfClass:[THNetworkActivityCell class]]) {
 		if(rowIndex < [[self arrangedObjects] count]) {
-			GTMHTTPFetcher *fetcher = [[self arrangedObjects] objectAtIndex:rowIndex];
+			GTMHTTPFetcher *fetcher = [self arrangedObjects][rowIndex];
 			NSDictionary *dict = [fetcher userData];
 
 			NSString *title = [dict valueForKey:@"title"];

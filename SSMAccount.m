@@ -86,14 +86,14 @@
 
             // So we don't get throttled for hammering.
             // https://github.com/tylerhall/MacSosumi/issues/8
-            NSDictionary *serverContext = [json objectForKey:@"serverContext"];
+            NSDictionary *serverContext = json[@"serverContext"];
             if(serverContext) {
                 refreshTimerInterval = [[serverContext valueForKey:@"callbackIntervalInMS"] floatValue] / 1000;
             } else {
                 refreshTimerInterval = 30.0;
             }
             
-			NSArray *rawDevices = [json objectForKey:@"content"];
+			NSArray *rawDevices = json[@"content"];
 			if(rawDevices) {
 				for(NSDictionary *rawDevice in rawDevices) {
 					
@@ -101,9 +101,9 @@
 					BOOL found = NO;
 					NSMutableArray *childNodes = [self.treeNode mutableChildNodes];
 					for(int i = 0; i < [childNodes count]; i++) {
-						if([[(SSMDevice *)[[childNodes objectAtIndex:i] representedObject] deviceId] isEqualToString:[rawDevice objectForKey:@"id"]]) {
+						if([[(SSMDevice *)[childNodes[i] representedObject] deviceId] isEqualToString:rawDevice[@"id"]]) {
 							found = YES;
-							device = [[childNodes objectAtIndex:i] representedObject]; 
+							device = [childNodes[i] representedObject]; 
 							break;
 						}
 					}
@@ -113,23 +113,23 @@
 					}
 
 					device.parent = self;
-					device.isLocating = [[rawDevice objectForKey:@"isLocating"] boolValue];
-					device.deviceClass = [rawDevice objectForKey:@"deviceClass"];
-					device.deviceModel = [rawDevice objectForKey:@"deviceModel"];
-					device.deviceStatus = [rawDevice objectForKey:@"deviceStatus"];
-					device.deviceId = [rawDevice objectForKey:@"id"];
-					device.name = [rawDevice objectForKey:@"name"];
-					device.isCharging = [(NSString *)[rawDevice objectForKey:@"batteryStatus"] isEqualToString:@"Charging"];
-					device.batteryLevel = [rawDevice objectForKey:@"batteryLevel"];
+					device.isLocating = [rawDevice[@"isLocating"] boolValue];
+					device.deviceClass = rawDevice[@"deviceClass"];
+					device.deviceModel = rawDevice[@"deviceModel"];
+					device.deviceStatus = rawDevice[@"deviceStatus"];
+					device.deviceId = rawDevice[@"id"];
+					device.name = rawDevice[@"name"];
+					device.isCharging = [(NSString *)rawDevice[@"batteryStatus"] isEqualToString:@"Charging"];
+					device.batteryLevel = rawDevice[@"batteryLevel"];
 
-					id location = [rawDevice objectForKey:@"location"];
+					id location = rawDevice[@"location"];
 					if(location != [NSNull null]) {
 						device.locationTimestamp = [NSDate dateWithTimeIntervalSince1970:[(NSNumber *)[location valueForKey:@"timeStamp"] doubleValue] / 1000];
-						device.locationType = [location objectForKey:@"positionType"];
-						device.horizontalAccuracy = [location objectForKey:@"horizontalAccuracy"];
+						device.locationType = location[@"positionType"];
+						device.horizontalAccuracy = location[@"horizontalAccuracy"];
 						device.locationFinished = [[location valueForKey:@"locationFinished"] boolValue];
-						device.longitude = [location objectForKey:@"longitude"];
-						device.latitude = [location objectForKey:@"latitude"];
+						device.longitude = location[@"longitude"];
+						device.latitude = location[@"latitude"];
 					}
 					[self.devices setValue:device forKey:device.deviceId];
 					

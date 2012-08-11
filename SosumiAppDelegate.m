@@ -29,7 +29,7 @@
 		for(NSDictionary *dict in accounts) {
 			NSTreeNode *treeNode;
 			SSMAccount *tmpAccount = [[SSMAccount alloc] init];
-			tmpAccount.username = [dict objectForKey:@"username"];
+			tmpAccount.username = dict[@"username"];
 			EMGenericKeychainItem *kcItem = [EMGenericKeychainItem genericKeychainItemForService:@"Sosumi" withUsername:tmpAccount.username];
 			tmpAccount.password = kcItem.password;
 			[tmpAccount beginUpdatingDevices];
@@ -43,8 +43,8 @@
 	// we forgot to erase the old password from disk. This fixes that.
 	NSMutableArray *fixedAccounts = [NSMutableArray array];
 	for(int i = 0; i < [accounts count]; i++) {
-		NSDictionary *credentials = [accounts objectAtIndex:i];
-		NSDictionary *dict = [NSDictionary dictionaryWithObject:[credentials objectForKey:@"username"] forKey:@"username"];
+		NSDictionary *credentials = accounts[i];
+		NSDictionary *dict = @{@"username": credentials[@"username"]};
 		[fixedAccounts addObject:dict];
 	}
 	[[NSUserDefaults standardUserDefaults] setObject:fixedAccounts forKey:@"accounts"];
@@ -104,7 +104,7 @@
 
 - (BOOL)splitView:(NSSplitView *)splitView shouldAdjustSizeOfSubview:(NSView *)subview
 {
-	if(subview == [[splitView subviews] objectAtIndex:0]) {
+	if(subview == [splitView subviews][0]) {
 		return NO;
 	}
 	
@@ -136,7 +136,7 @@
 			SSMDevice *device = [deviceTreeNode representedObject];
 			if(device.latitude != nil && device.longitude != nil) {
 				// NSLog(@"mapped %@ %@ %@", device.name, device.latitude, device.longitude);
-				args = [NSArray arrayWithObjects:device.deviceId, device.name, device.latitude, device.longitude, device.imageURL, nil];
+				args = @[device.deviceId, device.name, device.latitude, device.longitude, device.imageURL];
 				[ws callWebScriptMethod:@"createMarker" withArguments:args];
 			}
 		}
@@ -160,7 +160,7 @@
 		return;
 	}
 	
-	NSTreeNode *treeNode = [[treeController selectedNodes] objectAtIndex:0];
+	NSTreeNode *treeNode = [treeController selectedNodes][0];
 	SSMAccount *account = [[[treeNode parentNode] representedObject] representedObject];
 	
 	EMGenericKeychainItem *kcItem = [EMGenericKeychainItem genericKeychainItemForService:@"Sosumi" withUsername:account.username];
@@ -171,8 +171,8 @@
 	NSMutableArray *accounts = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults] objectForKey:@"accounts"]];
 	if(accounts) {
 		for(int i = 0; i < [accounts count]; i++) {
-			NSDictionary *tmpAccount = [accounts objectAtIndex:i];
-			if([[tmpAccount objectForKey:@"username"] isEqualToString:account.username]) {
+			NSDictionary *tmpAccount = accounts[i];
+			if([tmpAccount[@"username"] isEqualToString:account.username]) {
 				[accounts removeObject:tmpAccount];
 			}
 		}
@@ -195,11 +195,11 @@
 		return;
 	}
 	
-	NSTreeNode *node = [[treeController selectedNodes] objectAtIndex:0];
+	NSTreeNode *node = [treeController selectedNodes][0];
 	SSMDevice *device = [[node representedObject] representedObject];
 
 	WebScriptObject *ws = [map windowScriptObject];
-	NSArray *args = [NSArray arrayWithObjects:device.deviceId, nil];
+	NSArray *args = @[device.deviceId];
 	[ws callWebScriptMethod:@"viewOnMap" withArguments:args];
 }
 
@@ -225,7 +225,7 @@
 		return;
 	}
 	
-	NSTreeNode *node = [[treeController selectedNodes] objectAtIndex:0];
+	NSTreeNode *node = [treeController selectedNodes][0];
 	SSMDevice *device = [[node representedObject] representedObject];
 
 	SSMAccount *account = [[[node parentNode] representedObject] representedObject];
@@ -261,7 +261,7 @@
 	[treeController insertObject:treeNode atArrangedObjectIndexPath:[NSIndexPath indexPathWithIndex:0]];
 
 	NSMutableArray *accounts = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults] objectForKey:@"accounts"]];
-	[accounts addObject:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:kcItem.username, nil] forKeys:[NSArray arrayWithObjects:@"username", nil]]];
+	[accounts addObject:[NSDictionary dictionaryWithObjects:@[kcItem.username] forKeys:@[@"username"]]];
 	[[NSUserDefaults standardUserDefaults] setObject:accounts forKey:@"accounts"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 
@@ -275,7 +275,7 @@
 		return;
 	}
 	
-	NSTreeNode *node = [[treeController selectedNodes] objectAtIndex:0];
+	NSTreeNode *node = [treeController selectedNodes][0];
 	SSMDevice *device = [[node representedObject] representedObject];
 	SSMAccount *account = [[[node parentNode] representedObject] representedObject];
 	[account sendMessage:[txtMessage stringValue] withSubject:[txtSubject stringValue] andAlarm:[chkAlarm state] toDevice:device.deviceId];
@@ -290,11 +290,11 @@
 		return;
 	}
 	
-	NSTreeNode *node = [[treeController selectedNodes] objectAtIndex:0];
+	NSTreeNode *node = [treeController selectedNodes][0];
 	SSMDevice *device = [[node representedObject] representedObject];
 
 	NSPasteboard *pb = [NSPasteboard generalPasteboard];
-    NSArray *types = [NSArray arrayWithObjects:NSStringPboardType, nil];
+    NSArray *types = @[NSStringPboardType];
     [pb declareTypes:types owner:self];
     [pb setString:[device coords] forType:NSStringPboardType];
 }
